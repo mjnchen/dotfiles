@@ -1,0 +1,46 @@
+---
+description: Require explicit user approval before executing destructive or write MCP operations
+alwaysApply: true
+---
+
+# Manual Approval for Destructive Operations
+
+**Never execute destructive or state-modifying MCP tool calls without explicit user confirmation.**
+
+## Covered operations
+
+Any MCP tool that creates, updates, or deletes remote resources, including but not limited to:
+
+- `host_delete`, `host_create`, `host_update`
+- `hostgroup_delete`, `hostgroup_create`, `hostgroup_update`
+- `item_delete`, `item_create`, `item_update`
+- `trigger_delete`, `trigger_create`, `trigger_update`
+- `template_delete`, `template_create`, `template_update`
+- `user_delete`, `user_create`, `user_update`
+- `proxy_delete`, `proxy_create`, `proxy_update`
+- `maintenance_delete`, `maintenance_create`, `maintenance_update`
+- `event_acknowledge`
+- `configuration_import`
+
+## Required workflow
+
+1. **Describe** what will be changed — list the target system, resource names/IDs, and the action (create/update/delete).
+2. **Ask** the user for explicit approval before calling the tool.
+3. **Execute** only after the user confirms.
+
+```
+# BAD — calling delete without asking
+assistant: [calls host_delete with hostids]
+
+# GOOD — describe then ask
+assistant: "I'm about to delete 73 hosts from Zabbix on port 8085.
+           Shall I proceed?"
+user:      "yes"
+assistant: [calls host_delete]
+```
+
+## Exceptions
+
+- Read-only operations (`*_get`, `*_summarize`, `history_get`, `trend_get`, `apiinfo_version`, list/query operations) do **not** require approval.
+- `maya-cli` commands (seed, clean, etc.) are exempt — the data they manage is ephemeral and easily recreated.
+- If the user's message is an explicit instruction to perform the exact write operation (e.g., "delete host X"), treat that as pre-approval — but still confirm the target system/instance if multiple environments exist.
