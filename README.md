@@ -9,6 +9,8 @@ Personal configuration files, managed via symlinks.
 | `.zshrc` | `~/.zshrc` |
 | `.gitconfig` | `~/.gitconfig` |
 | `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
+| `sublime/Preferences.sublime-settings` | `~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings` |
+| `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `cursor/rules/` | `~/.cursor/rules` |
 
 ## Setup
@@ -27,6 +29,12 @@ ln -sf $(pwd)/.gitconfig ~/.gitconfig
 
 # Ghostty
 ln -sf $(pwd)/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
+
+# Sublime Text
+ln -sf $(pwd)/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/Preferences.sublime-settings
+
+# VS Code
+ln -sf $(pwd)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 # Cursor global rules
 ln -sf $(pwd)/cursor/rules ~/.cursor/rules

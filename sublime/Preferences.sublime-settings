@@ -1,0 +1,13 @@
+{
+	"font_size": 15,
+	"open_files_in_new_window": false,
+	"color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"theme": "Adaptive.sublime-theme",
+	"index_files": true,
+	"dark_theme": "Default.sublime-theme",
+	"light_theme": "Adaptive.sublime-theme",
+}
