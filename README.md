@@ -8,6 +8,7 @@ Personal configuration files, managed via symlinks.
 |---|---|
 | `.zshrc` | `~/.zshrc` |
 | `.gitconfig` | `~/.gitconfig` |
+| `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
 | `cursor/rules/` | `~/.cursor/rules` |
 
 ## Setup
@@ -23,6 +24,9 @@ ln -sf $(pwd)/.zshrc ~/.zshrc
 
 # git
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
+
+# Ghostty
+ln -sf $(pwd)/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
 
 # Cursor global rules
 ln -sf $(pwd)/cursor/rules ~/.cursor/rules
