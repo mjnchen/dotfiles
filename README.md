@@ -8,6 +8,7 @@ Personal configuration files, managed via symlinks.
 |---|---|
 | `zsh/.zshrc` | `~/.zshrc` |
 | `zsh/.zshrc.personal.example` | `~/.zshrc.personal` (copy & customize, not symlinked) |
+| `zsh/.zshrc.work.example` | `~/.zshrc.work` (copy & customize, not symlinked) |
 | `git/.gitconfig` | `~/.gitconfig` |
 | `git/.gitignore_global` | `~/.gitignore_global` |
 | `Brewfile` | run `brew bundle` to install |

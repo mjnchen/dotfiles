@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Machine-specific overrides (not tracked in dotfiles)
 [[ -f ~/.zshrc.personal ]] && source ~/.zshrc.personal
+[[ -f ~/.zshrc.work ]] && source ~/.zshrc.work
 
 # ==============================================================================
 #                              USER CONFIGURATION
@@ -140,13 +141,7 @@ chpwd_functions+=(set_terminal_title)
 #                                     PATH
 # ==============================================================================
 
-# pnpm
-export PNPM_HOME="/Users/mchen/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
+# pnpm — set PNPM_HOME in ~/.zshrc.work or ~/.zshrc.personal if needed
 
 # Cursor Path
 export PATH="$HOME/.local/bin:$PATH"
@@ -156,6 +151,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # ==============================================================================
 
 alias gonaisa="cd ~/Projects/naisa"
+alias gopersonal="cd ~/Projects/personal"
 
 # ==============================================================================
 #                                    Naisa

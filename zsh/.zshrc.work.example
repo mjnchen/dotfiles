@@ -1,0 +1,15 @@
+# ==============================================================================
+#                            WORK MACHINE OVERRIDES
+# ==============================================================================
+# Copy this file to ~/.zshrc.work and customize for your work machine.
+# This file is sourced by .zshrc but is NOT tracked in the dotfiles repo.
+
+# pnpm
+# export PNPM_HOME="/Users/mchen/Library/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
+
+# Work-specific aliases
+# alias gowork="cd ~/Projects/work"
