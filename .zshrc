@@ -78,6 +78,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Machine-specific overrides (not tracked in dotfiles)
+[[ -f ~/.zshrc.personal ]] && source ~/.zshrc.personal
+
 # ==============================================================================
 #                              USER CONFIGURATION
 # ==============================================================================
