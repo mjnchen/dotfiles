@@ -11,6 +11,7 @@ Personal configuration files, managed via symlinks.
 | `zsh/.zshrc.work.example` | `~/.zshrc.work` (copy & customize, not symlinked) |
 | `git/.gitconfig` | `~/.gitconfig` |
 | `git/.gitignore_global` | `~/.gitignore_global` |
+| `git/hooks/pre-push` | `.git/hooks/pre-push` (shows diff summary before push) |
 | `brew/Brewfile` | common packages — run `brew bundle` to install |
 | `brew/Brewfile.work.example` | `~/.Brewfile.work` (copy & customize, not symlinked) |
 | `brew/Brewfile.personal.example` | `~/.Brewfile.personal` (copy & customize, not symlinked) |
@@ -35,6 +36,7 @@ cp $(pwd)/zsh/.zshrc.personal.example ~/.zshrc.personal  # then customize
 # git
 ln -sf $(pwd)/git/.gitconfig ~/.gitconfig
 ln -sf $(pwd)/git/.gitignore_global ~/.gitignore_global
+ln -sf ../../git/hooks/pre-push .git/hooks/pre-push
 
 # Homebrew — common packages
 brew bundle --file=$(pwd)/brew/Brewfile
