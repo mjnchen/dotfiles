@@ -11,7 +11,9 @@ Personal configuration files, managed via symlinks.
 | `zsh/.zshrc.work.example` | `~/.zshrc.work` (copy & customize, not symlinked) |
 | `git/.gitconfig` | `~/.gitconfig` |
 | `git/.gitignore_global` | `~/.gitignore_global` |
-| `Brewfile` | run `brew bundle` to install |
+| `brew/Brewfile` | common packages — run `brew bundle` to install |
+| `brew/Brewfile.work.example` | `~/.Brewfile.work` (copy & customize, not symlinked) |
+| `brew/Brewfile.personal.example` | `~/.Brewfile.personal` (copy & customize, not symlinked) |
 | `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
 | `sublime/Preferences.sublime-settings` | `~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
@@ -34,8 +36,13 @@ cp $(pwd)/zsh/.zshrc.personal.example ~/.zshrc.personal  # then customize
 ln -sf $(pwd)/git/.gitconfig ~/.gitconfig
 ln -sf $(pwd)/git/.gitignore_global ~/.gitignore_global
 
-# Homebrew packages
-brew bundle
+# Homebrew — common packages
+brew bundle --file=$(pwd)/brew/Brewfile
+
+# Homebrew — machine-specific (pick one)
+cp $(pwd)/brew/Brewfile.work.example ~/.Brewfile.work        # then customize
+# cp $(pwd)/brew/Brewfile.personal.example ~/.Brewfile.personal
+brew bundle --file=~/.Brewfile.work    # or ~/.Brewfile.personal
 
 # Ghostty
 ln -sf $(pwd)/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config

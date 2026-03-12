@@ -1,0 +1,12 @@
+tap "hashicorp/tap"
+
+brew "awscli"
+brew "cloudflared"
+brew "helm"
+brew "k3d"
+brew "kubernetes-cli"
+brew "temporal"
+brew "hashicorp/tap/terraform"
+
+cask "cloudflare-warp"
+cask "multipass"

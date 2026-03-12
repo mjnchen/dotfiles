@@ -1,0 +1,8 @@
+tap "homebrew/services"
+
+brew "gh"
+brew "jq"
+brew "node"
+brew "telnet"
+brew "tmate"
+brew "tmux"
