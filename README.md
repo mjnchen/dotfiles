@@ -8,7 +8,9 @@ Personal configuration files, managed via symlinks.
 |---|---|
 | `zsh/.zshrc` | `~/.zshrc` |
 | `zsh/.zshrc.personal.example` | `~/.zshrc.personal` (copy & customize, not symlinked) |
-| `.gitconfig` | `~/.gitconfig` |
+| `git/.gitconfig` | `~/.gitconfig` |
+| `git/.gitignore_global` | `~/.gitignore_global` |
+| `Brewfile` | run `brew bundle` to install |
 | `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
 | `sublime/Preferences.sublime-settings` | `~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
@@ -28,7 +30,11 @@ ln -sf $(pwd)/zsh/.zshrc ~/.zshrc
 cp $(pwd)/zsh/.zshrc.personal.example ~/.zshrc.personal  # then customize
 
 # git
-ln -sf $(pwd)/.gitconfig ~/.gitconfig
+ln -sf $(pwd)/git/.gitconfig ~/.gitconfig
+ln -sf $(pwd)/git/.gitignore_global ~/.gitignore_global
+
+# Homebrew packages
+brew bundle
 
 # Ghostty
 ln -sf $(pwd)/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
