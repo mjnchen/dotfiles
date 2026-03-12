@@ -1,0 +1,18 @@
+# ==============================================================================
+#                          PERSONAL MACHINE OVERRIDES
+# ==============================================================================
+# Copy this file to ~/.zshrc.personal and customize for your machine.
+# This file is sourced by .zshrc but is NOT tracked in the dotfiles repo.
+
+# Example: block cloning from a work org on a personal machine
+# git() {
+#   if [[ "$1" == "clone" ]]; then
+#     for arg in "$@"; do
+#       if [[ "$arg" == *"your-org"* ]]; then
+#         echo "Blocked: work repos should not be cloned on personal machine."
+#         return 1
+#       fi
+#     done
+#   fi
+#   command git "$@"
+# }

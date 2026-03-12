@@ -6,7 +6,8 @@ Personal configuration files, managed via symlinks.
 
 | File / Directory | Symlink |
 |---|---|
-| `.zshrc` | `~/.zshrc` |
+| `zsh/.zshrc` | `~/.zshrc` |
+| `zsh/.zshrc.personal.example` | `~/.zshrc.personal` (copy & customize, not symlinked) |
 | `.gitconfig` | `~/.gitconfig` |
 | `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
 | `sublime/Preferences.sublime-settings` | `~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings` |
@@ -23,7 +24,8 @@ git clone git@github.com:mjnchen/dotfiles.git ~/Projects/personal/dotfiles
 cd ~/Projects/personal/dotfiles
 
 # zsh
-ln -sf $(pwd)/.zshrc ~/.zshrc
+ln -sf $(pwd)/zsh/.zshrc ~/.zshrc
+cp $(pwd)/zsh/.zshrc.personal.example ~/.zshrc.personal  # then customize
 
 # git
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
