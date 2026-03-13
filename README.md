@@ -15,6 +15,8 @@ Personal configuration files, managed via symlinks.
 | `brew/Brewfile` | common packages — run `brew bundle` to install |
 | `brew/Brewfile.work.example` | `~/.Brewfile.work` (copy & customize, not symlinked) |
 | `brew/Brewfile.personal.example` | `~/.Brewfile.personal` (copy & customize, not symlinked) |
+| `npm/packages` | global npm packages — installed by `setup.sh` |
+| `setup.sh` | one-shot setup script for new machines |
 | `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
 | `sublime/Preferences.sublime-settings` | `~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
@@ -23,11 +25,21 @@ Personal configuration files, managed via symlinks.
 
 ## Setup
 
-Clone the repo and create symlinks:
+Clone the repo and run the setup script:
 
 ```bash
 git clone git@github.com:mjnchen/dotfiles.git ~/Projects/personal/dotfiles
 cd ~/Projects/personal/dotfiles
+
+# Copy and customize machine-specific files first
+cp brew/Brewfile.personal.example ~/.Brewfile.personal  # or Brewfile.work.example
+cp zsh/.zshrc.personal.example ~/.zshrc.personal        # then customize
+
+# Run setup
+./setup.sh
+```
+
+### Manual steps (optional)
 
 # zsh
 ln -sf $(pwd)/zsh/.zshrc ~/.zshrc
