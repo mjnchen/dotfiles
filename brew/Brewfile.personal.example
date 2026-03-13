@@ -1,8 +1,6 @@
 cask "font-jetbrains-mono-nerd-font"
-brew "lazygit"
 brew "mysql"
 brew "python@3.12"
 brew "python@3.13"
 brew "pytorch"
 brew "torchvision"
-brew "yazi"
