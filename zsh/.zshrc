@@ -78,6 +78,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# zsh plugins (installed via brew)
+[ -f $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Machine-specific overrides (not tracked in dotfiles)
 [[ -f ~/.zshrc.personal ]] && source ~/.zshrc.personal
 [[ -f ~/.zshrc.work ]] && source ~/.zshrc.work
