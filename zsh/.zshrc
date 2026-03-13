@@ -28,6 +28,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 #                                   PROMPT
 # ==============================================================================
 
+setopt PROMPT_SUBST
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' check-for-changes true
