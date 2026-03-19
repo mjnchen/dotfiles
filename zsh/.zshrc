@@ -1,22 +1,14 @@
 # ==============================================================================
-#                                   HISTORY
+#                                   OH MY ZSH
 # ==============================================================================
 
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.zsh_history
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_SPACE
-setopt SHARE_HISTORY
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 
-# ==============================================================================
-#                                 COMPLETION
-# ==============================================================================
-
-autoload -Uz compinit
-if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then compinit; else compinit -C; fi
-zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+unsetopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
 
 # ==============================================================================
 #                                  PLUGINS
@@ -24,20 +16,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 [ -f $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# ==============================================================================
-#                                   PROMPT
-# ==============================================================================
-
-setopt PROMPT_SUBST
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' unstagedstr '✗'
-zstyle ':vcs_info:git:*' formats ' git:(%F{cyan}%b%f) %F{red}%u%f'
-precmd_functions+=(vcs_info)
-
-PROMPT='%(?.%F{green}➜%f.%F{red}➜%f) %F{cyan}%1~%f${vcs_info_msg_0_} '
 
 # ==============================================================================
 #                          MACHINE-SPECIFIC OVERRIDES
@@ -57,20 +35,7 @@ export PATH="$HOME/.local/bin:$PATH"
 #                                   ALIASES
 # ==============================================================================
 
-alias gonaisa="cd ~/Projects/naisa"
 alias gopersonal="cd ~/Projects/personal"
-
-# ==============================================================================
-#                                    NAISA
-# ==============================================================================
-
-# naisa ui — lazy-load token on first use
-_load_github_token() {
-  if [[ -z "$GITHUB_PACKAGES_TOKEN" ]] && command -v gh >/dev/null 2>&1; then
-    export GITHUB_PACKAGES_TOKEN="$(gh auth token 2>/dev/null)"
-  fi
-}
-precmd_functions+=(_load_github_token)
 
 # ==============================================================================
 #                              GHOSTTY TAB TITLE

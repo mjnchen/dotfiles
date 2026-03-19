@@ -13,3 +13,12 @@
 
 # Work-specific aliases
 # alias gowork="cd ~/Projects/work"
+# alias gonaisa="cd ~/Projects/naisa"
+
+# Naisa UI — lazy-load GitHub Packages token on first use
+# _load_github_token() {
+#   if [[ -z "$GITHUB_PACKAGES_TOKEN" ]] && command -v gh >/dev/null 2>&1; then
+#     export GITHUB_PACKAGES_TOKEN="$(gh auth token 2>/dev/null)"
+#   fi
+# }
+# precmd_functions+=(_load_github_token)
