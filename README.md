@@ -17,6 +17,7 @@ Personal configuration files, managed via symlinks.
 | `brew/Brewfile.personal.example` | `~/.Brewfile.personal` (copy & customize, not symlinked) |
 | `npm/packages` | global npm packages — installed by `setup.sh` |
 | `setup.sh` | one-shot setup script for new machines |
+| `starship/starship.toml` | `~/.config/starship.toml` |
 | `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
 | `sublime/Preferences.sublime-settings` | `~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
