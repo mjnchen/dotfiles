@@ -3,5 +3,6 @@
     "workbench.preferredHighContrastLightColorTheme": "Night Owl",
     "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "catppuccin-mocha",
-    "claudeCode.preferredLocation": "sidebar"
+    "claudeCode.preferredLocation": "sidebar",
+    "redhat.telemetry.enabled": true
 }

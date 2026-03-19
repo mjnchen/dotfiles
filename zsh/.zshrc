@@ -29,7 +29,15 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 #                                   PROMPT
 # ==============================================================================
 
-eval "$(starship init zsh)"
+setopt PROMPT_SUBST
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' unstagedstr '✗'
+zstyle ':vcs_info:git:*' formats ' git:(%F{cyan}%b%f) %F{red}%u%f'
+precmd_functions+=(vcs_info)
+
+PROMPT='%(?.%F{green}➜%f.%F{red}➜%f) %F{cyan}%1~%f${vcs_info_msg_0_} '
 
 # ==============================================================================
 #                          MACHINE-SPECIFIC OVERRIDES
