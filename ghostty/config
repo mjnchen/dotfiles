@@ -48,7 +48,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = JetBrainsMono Nerd Font
+font-family = MapleMono NF CN
 # window-padding-x = 4
 # window-padding-y = 4
 copy-on-select = clipboard

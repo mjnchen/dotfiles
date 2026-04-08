@@ -1,6 +1,8 @@
 tap "homebrew/services"
+cask "font-maple-mono-nf-cn"
 
 brew "gh"
+brew "starship"
 brew "jq"
 brew "lazygit"
 brew "node"

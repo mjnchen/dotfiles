@@ -25,6 +25,10 @@ echo "==> Symlinks: git"
 ln -sf "$DOTFILES/git/.gitconfig" ~/.gitconfig
 ln -sf "$DOTFILES/git/.gitignore_global" ~/.gitignore_global
 
+echo "==> Symlinks: Starship"
+mkdir -p ~/.config
+ln -sf "$DOTFILES/starship/starship.toml" ~/.config/starship.toml
+
 echo "==> Symlinks: Ghostty"
 ln -sf "$DOTFILES/ghostty/config" "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 
