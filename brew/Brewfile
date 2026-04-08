@@ -1,4 +1,3 @@
-tap "homebrew/services"
 cask "font-maple-mono-nf-cn"
 
 brew "gh"
