@@ -1,0 +1,49 @@
+---
+description: Require explicit user approval before any git push operation
+alwaysApply: true
+---
+
+# Manual Approval for Git Push
+
+**Never execute `git push` (regular or force) without explicit user confirmation.**
+
+## Covered commands
+
+Any shell command that pushes commits to a remote repository:
+
+- `git push`
+- `git push origin ...`
+- `git push -u origin ...`
+- `git push --force ...`
+- `git push --force-with-lease ...`
+- `git push -f ...`
+
+## Required workflow
+
+1. **Describe** what will be pushed — list the branch name, remote, number of commits, and whether it is a force push.
+2. **Ask** the user for explicit approval before running the command.
+3. **Execute** only after the user confirms.
+
+Force pushes (`--force`, `--force-with-lease`, `-f`) must be called out explicitly in the confirmation prompt.
+
+```
+# BAD — pushing without asking
+assistant: [runs git push origin feat/my-branch]
+
+# GOOD — describe then ask
+assistant: "I'm about to push 2 commits on feat/my-branch to origin.
+            Shall I proceed?"
+user:      "yes"
+assistant: [runs git push origin feat/my-branch]
+
+# GOOD — force push with explicit callout
+assistant: "I'm about to FORCE push (--force-with-lease) feat/my-branch
+            to origin. This rewrites remote history. Shall I proceed?"
+user:      "yes"
+assistant: [runs git push --force-with-lease origin feat/my-branch]
+```
+
+## Exceptions
+
+- If the user's message is an explicit instruction to push (e.g., "push my branch", "push to origin"), treat that as pre-approval.
+- If the user's message explicitly requests a force push (e.g., "force push"), treat that as pre-approval for the force push.
