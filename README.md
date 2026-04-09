@@ -22,6 +22,8 @@ Personal configuration files, managed via symlinks.
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `vscode/default_dark.icns` | `/Applications/Visual Studio Code.app/Contents/Resources/Code.icns` |
 | `cursor/rules/` | `~/.cursor/rules` |
+| `zellij/config.kdl` | `~/.config/zellij/config.kdl` |
+| `claude/statusline.sh` | `~/.claude/statusline.sh` |
 
 ## Setup
 
@@ -37,6 +39,17 @@ cp zsh/.zshrc.personal.example ~/.zshrc.personal        # then customize
 
 # Run setup
 ./setup.sh
+```
+
+### Claude Code statusline (manual)
+
+The statusline script is symlinked by `setup.sh`, but you also need to add the following to `~/.claude/settings.json` manually:
+
+```json
+"statusLine": {
+  "type": "command",
+  "command": "~/.claude/statusline.sh"
+}
 ```
 
 ### VS Code icon (optional, manual)

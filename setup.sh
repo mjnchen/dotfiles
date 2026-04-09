@@ -29,6 +29,14 @@ echo "==> Symlinks: Starship"
 mkdir -p ~/.config
 ln -sf "$DOTFILES/starship/starship.toml" ~/.config/starship.toml
 
+echo "==> Symlinks: Zellij"
+mkdir -p ~/.config/zellij
+ln -sf "$DOTFILES/zellij/config.kdl" ~/.config/zellij/config.kdl
+
+echo "==> Symlinks: Claude"
+mkdir -p ~/.claude
+ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
+
 echo "==> Symlinks: Ghostty"
 ln -sf "$DOTFILES/ghostty/config" "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 
@@ -42,3 +50,4 @@ echo ""
 echo "Done! Don't forget to:"
 echo "  - Copy brew/Brewfile.personal.example to ~/.Brewfile.personal and customize"
 echo "  - Copy zsh/.zshrc.personal.example to ~/.zshrc.personal and customize"
+echo "  - Add the Claude Code statusLine config to ~/.claude/settings.json (see README)"

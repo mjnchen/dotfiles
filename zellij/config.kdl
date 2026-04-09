@@ -1,0 +1,20 @@
+// Zellij configuration
+// Full reference: https://zellij.dev/documentation/configuration
+
+// Use default theme from terminal colors
+theme "default"
+
+// Don't show the pane frames (cleaner look)
+// pane_frames false
+
+// Default shell
+// default_shell "zsh"
+
+// Mouse mode
+mouse_mode true
+
+// Scroll buffer size
+scroll_buffer_size 10000
+
+// Copy on select (like tmux)
+copy_on_select true
