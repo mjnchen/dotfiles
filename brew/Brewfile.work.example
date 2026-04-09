@@ -1,6 +1,8 @@
 tap "hashicorp/tap"
 
 brew "awscli"
+brew "telnet"
+brew "tmate"
 brew "cloudflared"
 brew "helm"
 brew "k3d"
