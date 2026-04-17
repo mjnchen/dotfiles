@@ -36,6 +36,9 @@ ln -sf "$DOTFILES/zellij/config.kdl" ~/.config/zellij/config.kdl
 echo "==> Symlinks: Claude"
 mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
+CLAUDE_PROJECT_DIR="${HOME}/.claude/projects/-Users-mchen-Projects-personal-dotfiles"
+mkdir -p "$CLAUDE_PROJECT_DIR"
+ln -sf "$DOTFILES/claude/memory" "$CLAUDE_PROJECT_DIR/memory"
 
 echo "==> Symlinks: Ghostty"
 ln -sf "$DOTFILES/ghostty/config" "$HOME/Library/Application Support/com.mitchellh.ghostty/config"

@@ -11,4 +11,3 @@ brew "temporal"
 brew "hashicorp/tap/terraform"
 
 cask "cloudflare-warp"
-cask "multipass"
