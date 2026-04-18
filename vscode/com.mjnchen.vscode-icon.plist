@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.mjnchen.vscode-icon</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>__DOTFILES__/vscode/apply-icon.sh</string>
+    </array>
+    <key>WatchPaths</key>
+    <array>
+        <string>/Applications/Visual Studio Code.app/Contents/Resources/Code.icns</string>
+    </array>
+</dict>
+</plist>
