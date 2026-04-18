@@ -1,4 +1,6 @@
 cask "font-maple-mono-nf-cn"
+cask "maccy"
+cask "shottr"
 
 brew "fd"
 brew "fzf"
