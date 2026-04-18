@@ -2,8 +2,8 @@
 name: Dotfiles project overview
 description: Structure, tooling, and configuration choices in this dotfiles repo
 type: project
+originSessionId: 60adc810-7c0a-4cd6-b041-a2bfe8c3eb62
 ---
-
 This is a personal macOS dotfiles repo managed by Martin Chen.
 
 **Shell:** zsh with Starship prompt (Catppuccin Mocha theme), zsh-autosuggestions, zsh-syntax-highlighting. No Oh My Zsh — plugins sourced directly via Homebrew.
@@ -12,7 +12,7 @@ This is a personal macOS dotfiles repo managed by Martin Chen.
 
 **Terminal:** Ghostty with MapleMono NF CN font, Catppuccin Mocha theme, `copy-on-select = clipboard`, `shell-integration-features = no-title` (tab titles managed manually via zsh precmd).
 
-**Package management:** Homebrew via `brew/Brewfile` (common) + machine-specific `~/.Brewfile.personal` or `~/.Brewfile.work`. Key brews: fd, fzf, gh, starship, jq, lazygit, node, ripgrep, yazi, zellij, zoxide, zsh-autosuggestions, zsh-syntax-highlighting. Font: `font-maple-mono-nf-cn` cask. Work-specific adds: awscli, telnet, tmate, cloudflared, helm, k3d, etc.
+**Package management:** Homebrew via `brew/Brewfile` (common) + machine-specific `~/.Brewfile.personal` or `~/.Brewfile.work`. Key brews: fd, fzf, gh, starship, jq, lazygit, node, ripgrep, yazi, zellij, zoxide, zsh-autosuggestions, zsh-syntax-highlighting. Casks: `font-maple-mono-nf-cn`, `maccy` (clipboard manager), `shottr` (screenshot tool). Work-specific adds: awscli, telnet, tmate, cloudflared, helm, k3d, etc.
 
 **Multiplexer:** Zellij (replaced tmux). Config at `zellij/config.kdl` → `~/.config/zellij/config.kdl`.
 
