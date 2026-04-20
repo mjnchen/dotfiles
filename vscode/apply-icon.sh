@@ -1,8 +1,11 @@
 #!/bin/bash
 DOTFILES="$(cd "$(dirname "$0")/.." && pwd)"
 ICON="$DOTFILES/vscode/default_dark.icns"
-TARGET="/Applications/Visual Studio Code.app/Contents/Resources/Code.icns"
 
-cp "$ICON" "$TARGET"
-touch "/Applications/Visual Studio Code.app"
+if ! command -v fileicon &>/dev/null; then
+  echo "fileicon not found — run: brew install fileicon"
+  exit 1
+fi
+
+fileicon set "/Applications/Visual Studio Code.app" "$ICON"
 killall Dock

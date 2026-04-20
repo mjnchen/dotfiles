@@ -3,6 +3,7 @@ cask "maccy"
 cask "shottr"
 
 brew "fd"
+brew "fileicon"
 brew "fzf"
 brew "gh"
 brew "jq"
