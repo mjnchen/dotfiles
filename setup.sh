@@ -29,9 +29,8 @@ echo "==> Symlinks: Starship"
 mkdir -p ~/.config
 ln -sf "$DOTFILES/starship/starship.toml" ~/.config/starship.toml
 
-echo "==> Symlinks: Zellij"
-mkdir -p ~/.config/zellij
-ln -sf "$DOTFILES/zellij/config.kdl" ~/.config/zellij/config.kdl
+echo "==> Symlinks: tmux"
+ln -sf "$DOTFILES/tmux/.tmux.conf" ~/.tmux.conf
 
 echo "==> Symlinks: Claude"
 mkdir -p ~/.claude
