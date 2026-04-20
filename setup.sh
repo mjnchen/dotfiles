@@ -46,13 +46,8 @@ ln -sf "$DOTFILES/ghostty/config" "$HOME/Library/Application Support/com.mitchel
 echo "==> Symlinks: VS Code"
 ln -sf "$DOTFILES/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
-echo "==> VS Code: custom icon"
+echo "==> VS Code: custom icon (run vscode/apply-icon.sh manually to apply)"
 chmod +x "$DOTFILES/vscode/apply-icon.sh"
-sed "s|__DOTFILES__|$DOTFILES|g" "$DOTFILES/vscode/com.mjnchen.vscode-icon.plist" \
-  > "$HOME/Library/LaunchAgents/com.mjnchen.vscode-icon.plist"
-launchctl unload "$HOME/Library/LaunchAgents/com.mjnchen.vscode-icon.plist" 2>/dev/null || true
-launchctl load "$HOME/Library/LaunchAgents/com.mjnchen.vscode-icon.plist"
-bash "$DOTFILES/vscode/apply-icon.sh"
 
 echo "==> Symlinks: Cursor"
 ln -sf "$DOTFILES/cursor/rules" ~/.cursor/rules
