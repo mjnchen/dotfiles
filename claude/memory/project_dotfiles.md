@@ -10,11 +10,11 @@ This is a personal macOS dotfiles repo managed by Martin Chen.
 
 **Prompt:** Starship (`starship/starship.toml`) with a powerline-style layout: OS icon → username → directory → git branch/status on the left; language versions (Node, Python, Java, Rust, Go) on the right. Uses Catppuccin Mocha palette.
 
-**Terminal:** Ghostty with MapleMono NF CN font, Catppuccin Mocha theme, `copy-on-select = clipboard`, `shell-integration-features = no-title` (tab titles managed manually via zsh precmd).
+**Terminal:** Ghostty with MapleMono NF CN font, Catppuccin Mocha theme, `copy-on-select = clipboard`, `shell-integration = zsh`, `shell-integration-features = no-title` (tab titles managed manually via zsh precmd).
 
-**Package management:** Homebrew via `brew/Brewfile` (common) + machine-specific `~/.Brewfile.personal` or `~/.Brewfile.work`. Key brews: fd, fzf, gh, starship, jq, lazygit, node, ripgrep, yazi, zellij, zoxide, zsh-autosuggestions, zsh-syntax-highlighting. Casks: `font-maple-mono-nf-cn`, `maccy` (clipboard manager), `shottr` (screenshot tool). Work-specific adds: awscli, telnet, tmate, cloudflared, helm, k3d, etc.
+**Package management:** Homebrew via `brew/Brewfile` (common) + machine-specific `~/.Brewfile.personal` or `~/.Brewfile.work`. Key brews: fd, fzf, gh, starship, jq, lazygit, node, ripgrep, tmux, yazi, zoxide, zsh-autosuggestions, zsh-syntax-highlighting. Casks: `font-maple-mono-nf-cn`, `maccy` (clipboard manager), `shottr` (screenshot tool). Work-specific adds: awscli, telnet, tmate, cloudflared, helm, k3d, etc.
 
-**Multiplexer:** Zellij (replaced tmux). Config at `zellij/config.kdl` → `~/.config/zellij/config.kdl`.
+**Multiplexer:** tmux (replaced zellij). Config at `tmux/.tmux.conf` → `~/.tmux.conf`. Includes mouse support, 10k scrollback, `Prefix+L` to toggle pipe-pane logging to `/tmp/tmux-YYYYMMDD.log`.
 
 **Claude Code:** `claude/statusline.sh` symlinked to `~/.claude/statusline.sh`. Requires manual addition of `statusLine` config to `~/.claude/settings.json` (see README).
 
