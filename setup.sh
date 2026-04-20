@@ -50,6 +50,7 @@ chmod +x "$DOTFILES/vscode/apply-icon.sh"
 
 echo "==> Symlinks: Cursor"
 ln -sf "$DOTFILES/cursor/rules" ~/.cursor/rules
+ln -sf "$DOTFILES/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 
 echo ""
 echo "Done! Don't forget to:"

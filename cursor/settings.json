@@ -1,0 +1,17 @@
+{
+    "window.commandCenter": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "makefile.configureOnOpen": true,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.preferredHighContrastLightColorTheme": "Catppuccin Frappé",
+    "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
+    "editor.fontLigatures": false,
+    "workbench.iconTheme": "catppuccin-mocha",
+    "claudeCode.preferredLocation": "panel",
+    "files.autoSave": "afterDelay",
+    "terminal.external.osxExec": "Ghostty.app",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "MapleMono NF CN"
+}
