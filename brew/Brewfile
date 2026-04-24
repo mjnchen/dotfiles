@@ -2,6 +2,8 @@ cask "font-maple-mono-nf-cn"
 cask "maccy"
 cask "shottr"
 
+brew "bat"
+brew "delta"
 brew "fd"
 brew "fileicon"
 brew "fzf"

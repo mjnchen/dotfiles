@@ -22,7 +22,6 @@ Personal configuration files, managed via symlinks.
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `vscode/default_dark.icns` | `/Applications/Visual Studio Code.app/Contents/Resources/Code.icns` |
 | `cursor/rules/` | `~/.cursor/rules` |
-| `zellij/config.kdl` | `~/.config/zellij/config.kdl` |
 | `claude/statusline.sh` | `~/.claude/statusline.sh` |
 
 ## Setup
