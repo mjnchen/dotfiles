@@ -136,8 +136,8 @@ format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
 
 [conda]
 symbol = " "
-style = "sapphire"
-format = '[$symbol$environment]($style)'
+style = "bg:sapphire"
+format = '[[ $symbol$environment ](fg:crust bg:sapphire)]($style)'
 ignore_base = false
 
 [time]
