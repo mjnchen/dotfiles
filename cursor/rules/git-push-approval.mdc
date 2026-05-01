@@ -43,7 +43,18 @@ user:      "yes"
 assistant: [runs git push --force-with-lease origin feat/my-branch]
 ```
 
+## Hold until verified
+
+**Default behavior: commit locally but do NOT push until the user has verified the changes.**
+
+When committing changes, prefer this workflow:
+1. Stage and commit locally.
+2. Tell the user what was committed and suggest they verify.
+3. Only push when the user explicitly says to push (e.g., "push", "push it", "push to origin").
+
+Do NOT proactively suggest pushing immediately after committing. Let the user decide when they're ready.
+
 ## Exceptions
 
-- If the user's message is an explicit instruction to push (e.g., "push my branch", "push to origin"), treat that as pre-approval.
+- If the user's message explicitly says "commit and push" or "push" as part of the instruction, that counts as approval to push.
 - If the user's message explicitly requests a force push (e.g., "force push"), treat that as pre-approval for the force push.
