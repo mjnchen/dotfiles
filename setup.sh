@@ -52,6 +52,9 @@ echo "==> Symlinks: Cursor"
 ln -sf "$DOTFILES/cursor/rules" ~/.cursor/rules
 ln -sf "$DOTFILES/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 
+echo "==> gh: aliases"
+gh alias set co 'pr checkout' --clobber >/dev/null
+
 echo ""
 echo "Done! Don't forget to:"
 echo "  - Copy brew/Brewfile.personal.example to ~/.Brewfile.personal and customize"

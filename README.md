@@ -23,6 +23,8 @@ Personal configuration files, managed via symlinks.
 | `vscode/default_dark.icns` | `/Applications/Visual Studio Code.app/Contents/Resources/Code.icns` |
 | `cursor/rules/` | `~/.cursor/rules` |
 | `claude/statusline.sh` | `~/.claude/statusline.sh` |
+| `macos/defaults.sh` | macOS system defaults — run manually after fresh install |
+| `macos/cleanup.sh` | macOS cleanup of known-defunct launch agents / login items — safe to re-run |
 
 ## Setup
 
