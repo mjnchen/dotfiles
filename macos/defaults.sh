@@ -6,7 +6,7 @@
 # Settings here reflect the current machine's actual customizations.
 # Optional dev-friendly toggles are commented out at the bottom — enable as desired.
 
-set -e
+set -u
 
 echo "==> Dock: autohide"
 defaults write com.apple.dock autohide -bool true
@@ -22,11 +22,9 @@ mkdir -p "$HOME/Desktop/screenshots"
 defaults write com.apple.screencapture location -string "$HOME/Desktop/screenshots"
 killall SystemUIServer 2>/dev/null || true
 
-echo "==> Performance: reduce motion"
-defaults write com.apple.universalaccess reduceMotion -bool true
-
-echo "==> Performance: reduce transparency"
-defaults write com.apple.universalaccess reduceTransparency -bool true
+# Reduce Motion + Reduce Transparency live in com.apple.universalaccess, which
+# is TCC-protected on modern macOS. Toggle these via GUI:
+#   System Settings → Accessibility → Display → Reduce motion / Reduce transparency
 
 echo "==> Performance: disable Dock magnification"
 defaults write com.apple.dock magnification -bool false
