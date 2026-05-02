@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.preferredHighContrastLightColorTheme": "Night Owl",
-    "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
+    "workbench.preferredHighContrastColorTheme": "Chang'an Night",
     "workbench.iconTheme": "catppuccin-mocha",
     "claudeCode.preferredLocation": "sidebar",
     "redhat.telemetry.enabled": true
