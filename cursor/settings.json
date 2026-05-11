@@ -13,5 +13,6 @@
     "files.autoSave": "afterDelay",
     "terminal.external.osxExec": "Ghostty.app",
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.fontFamily": "MapleMono NF CN"
+    "terminal.integrated.fontFamily": "MapleMono NF CN",
+    "window.autoDetectColorScheme": false
 }
