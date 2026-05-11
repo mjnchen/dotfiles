@@ -17,6 +17,14 @@ claude plugins install pr-review-toolkit
 claude plugins install superpowers
 ```
 
+## Third-party skills (MCPmarket)
+
+Install by copying the skill file to `~/.claude/skills/`:
+
+| Skill | Source | Role |
+|---|---|---|
+| `ai-daily-news` | [mcpmarket.com](https://mcpmarket.com/tools/skills/ai-daily-news-assistant) | Fetch AI news from smol.ai RSS, summarize and categorize, optionally generate HTML pages or shareable card images |
+
 ## Plugin roles
 
 | Plugin | Role |
