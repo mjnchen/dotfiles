@@ -4,5 +4,7 @@
     "workbench.preferredHighContrastColorTheme": "Chang'an Night",
     "workbench.iconTheme": "catppuccin-mocha",
     "claudeCode.preferredLocation": "sidebar",
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
