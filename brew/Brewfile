@@ -4,6 +4,7 @@ cask "ollama-app"
 cask "orbstack"
 cask "raycast"
 cask "shottr"
+cask "sublime-text"
 
 brew "bat"
 brew "btop"
