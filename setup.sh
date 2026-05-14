@@ -52,6 +52,17 @@ echo "==> Symlinks: Cursor"
 ln -sf "$DOTFILES/cursor/rules" ~/.cursor/rules
 ln -sf "$DOTFILES/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 
+echo "==> Symlinks: Obsidian"
+OBSIDIAN_VAULT="$HOME/Documents/Obsidian Vault"
+if [[ -d "$OBSIDIAN_VAULT" ]]; then
+  mkdir -p "$OBSIDIAN_VAULT/.obsidian"
+  for f in app.json appearance.json core-plugins.json graph.json; do
+    ln -sf "$DOTFILES/obsidian/.obsidian/$f" "$OBSIDIAN_VAULT/.obsidian/$f"
+  done
+else
+  echo "    Obsidian vault not found at $OBSIDIAN_VAULT — skipping"
+fi
+
 echo "==> gh: aliases"
 gh alias set co 'pr checkout' --clobber >/dev/null
 
