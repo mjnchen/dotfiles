@@ -53,14 +53,23 @@ ln -sf "$DOTFILES/cursor/rules" ~/.cursor/rules
 ln -sf "$DOTFILES/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 
 echo "==> Symlinks: Obsidian"
-OBSIDIAN_VAULT="$HOME/Documents/Obsidian Vault"
-if [[ -d "$OBSIDIAN_VAULT" ]]; then
-  mkdir -p "$OBSIDIAN_VAULT/.obsidian"
-  for f in app.json appearance.json core-plugins.json graph.json; do
-    ln -sf "$DOTFILES/obsidian/.obsidian/$f" "$OBSIDIAN_VAULT/.obsidian/$f"
-  done
+# Vault path is machine-specific — set it in ~/.obsidian_vault (see obsidian/obsidian_vault.example)
+if [[ -f ~/.obsidian_vault ]]; then
+  OBSIDIAN_VAULT="$(cat ~/.obsidian_vault)"
+  if [[ -d "$OBSIDIAN_VAULT/.obsidian" ]]; then
+    # Only symlink if vault has its own .obsidian/ managed by dotfiles (not a self-managed git repo)
+    if [[ ! -f "$OBSIDIAN_VAULT/.git" && ! -d "$OBSIDIAN_VAULT/.git" ]]; then
+      for f in app.json appearance.json core-plugins.json graph.json; do
+        ln -sf "$DOTFILES/obsidian/.obsidian/$f" "$OBSIDIAN_VAULT/.obsidian/$f"
+      done
+    else
+      echo "    Vault is a git repo (self-managing config) — skipping symlinks"
+    fi
+  else
+    echo "    Obsidian vault not found at $OBSIDIAN_VAULT — skipping"
+  fi
 else
-  echo "    Obsidian vault not found at $OBSIDIAN_VAULT — skipping"
+  echo "    ~/.obsidian_vault not set — skipping (see obsidian/obsidian_vault.example)"
 fi
 
 echo "==> gh: aliases"

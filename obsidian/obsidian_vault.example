@@ -1,0 +1,10 @@
+# Copy this to ~/.obsidian_vault and set the path to your Obsidian vault.
+# The path is machine-specific so it lives outside the repo.
+#
+# Example:
+#   /Users/yourname/Projects/personal/engram
+#
+# If your vault is a git repo (self-managed config like engram), dotfiles
+# will skip symlinking .obsidian/ config into it — the config travels with
+# the repo itself.
+/Users/mchen/Projects/personal/engram
