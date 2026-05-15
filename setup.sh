@@ -34,6 +34,7 @@ ln -sf "$DOTFILES/tmux/.tmux.conf" ~/.tmux.conf
 
 echo "==> Symlinks: Claude"
 mkdir -p ~/.claude
+ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
 CLAUDE_PROJECT_DIR="${HOME}/.claude/projects/-Users-mchen-Projects-personal-dotfiles"
 mkdir -p "$CLAUDE_PROJECT_DIR"
@@ -79,4 +80,4 @@ echo ""
 echo "Done! Don't forget to:"
 echo "  - Copy brew/Brewfile.personal.example to ~/.Brewfile.personal and customize"
 echo "  - Copy zsh/.zshrc.personal.example to ~/.zshrc.personal and customize"
-echo "  - Add the Claude Code statusLine config to ~/.claude/settings.json (see README)"
+echo "  - Review ~/.claude/settings.local.json for machine-specific Claude settings"

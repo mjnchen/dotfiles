@@ -1,0 +1,54 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git checkout *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git fetch *)",
+      "Bash(git pull *)",
+      "Bash(git push *)",
+      "Bash(brew install *)",
+      "Bash(brew uninstall *)",
+      "Bash(uv run *)",
+      "Bash(uv add *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(touch *)",
+      "Bash(chmod *)",
+      "Bash(open *)",
+      "Bash(code *)",
+      "Bash(cursor *)",
+      "Bash(docker port *)",
+      "Bash(python3 -c \":*)"
+    ],
+    "defaultMode": "acceptEdits",
+    "deny": [
+      "Bash(mkfs *)",
+      "Bash(dd *)",
+      "Edit(~/.ssh/**)"
+    ]
+  },
+  "model": "claude-opus-4-6",
+  "enabledPlugins": {
+    "hookify@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Read|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/Projects/personal/dotfiles/claude/hooks/soft-deny.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
