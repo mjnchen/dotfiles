@@ -6,5 +6,6 @@
     "claudeCode.preferredLocation": "sidebar",
     "redhat.telemetry.enabled": true,
     "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "makefile.configureOnOpen": true
 }
