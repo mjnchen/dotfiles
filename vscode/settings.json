@@ -7,5 +7,6 @@
     "redhat.telemetry.enabled": true,
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "makefile.configureOnOpen": true
+    "makefile.configureOnOpen": true,
+    "go.toolsManagement.autoUpdate": true
 }
