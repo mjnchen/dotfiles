@@ -36,3 +36,11 @@ Install by copying the skill file to `~/.claude/skills/`:
 | `skill-creator` | Create and eval custom skills |
 | `mcp-builder` | Build MCP servers to integrate external APIs |
 | `xlsx` / `pdf` / `pptx` / `docx` | File format handling |
+
+## CLAUDE.md references
+
+The Karpathy 12 Rules in `CLAUDE.md` are adapted from:
+
+- [Karpathy's X post](https://x.com/karpathy/status/2015883857489522876)
+- [Reddit discussion (r/AskVibeCoders)](https://www.reddit.com/r/AskVibecoders/comments/1ta7yr8/karpathys_claudemd_cuts_claude_mistakes_to_11/)
+- [Gist with full CLAUDE.md](https://gist.github.com/Planxnx/64b173bacf2c8c43435c4333d0b9bd94)
