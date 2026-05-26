@@ -34,6 +34,7 @@ ln -sf "$DOTFILES/tmux/.tmux.conf" ~/.tmux.conf
 
 echo "==> Symlinks: Claude"
 mkdir -p ~/.claude
+ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
 ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
 CLAUDE_PROJECT_DIR="${HOME}/.claude/projects/-Users-mchen-Projects-personal-dotfiles"
