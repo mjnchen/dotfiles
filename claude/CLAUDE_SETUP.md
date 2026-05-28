@@ -15,6 +15,7 @@ claude plugins install hookify
 claude plugins install claude-code-setup
 claude plugins install pr-review-toolkit
 claude plugins install superpowers
+claude plugins install ralph-loop
 ```
 
 ## Third-party skills (MCPmarket)
@@ -24,6 +25,8 @@ Install by copying the skill file to `~/.claude/skills/`:
 | Skill | Source | Role |
 |---|---|---|
 | `ai-daily-news` | [mcpmarket.com](https://mcpmarket.com/tools/skills/ai-daily-news-assistant) | Fetch AI news from smol.ai RSS, summarize and categorize, optionally generate HTML pages or shareable card images |
+| `grill-me` | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main) | Interview you relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree |
+| `grill-with-docs` | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main) | Like grill-me but also maintains domain glossary (CONTEXT.md) and ADRs inline as decisions crystallize |
 
 ## Plugin roles
 
@@ -33,6 +36,7 @@ Install by copying the skill file to `~/.claude/skills/`:
 | `superpowers` | Brainstorming, TDD, debugging, structured dev workflows |
 | `hookify` | Create Claude Code hooks from conversation patterns |
 | `claude-code-setup` | Analyze codebase and recommend hooks, skills, MCP servers |
+| `ralph-loop` | Iterative self-referential dev loops (Ralph Wiggum technique) |
 | `skill-creator` | Create and eval custom skills |
 | `mcp-builder` | Build MCP servers to integrate external APIs |
 | `xlsx` / `pdf` / `pptx` / `docx` | File format handling |
