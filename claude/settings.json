@@ -22,22 +22,14 @@
       "Bash(docker port *)",
       "Bash(python3 -c \":*)"
     ],
-    "defaultMode": "acceptEdits",
     "deny": [
       "Bash(mkfs *)",
       "Bash(dd *)",
       "Edit(~/.ssh/**)"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   },
   "model": "claude-opus-4-6",
-  "enabledPlugins": {
-    "hookify@claude-plugins-official": true,
-    "claude-code-setup@claude-plugins-official": true,
-    "pr-review-toolkit@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true
-  },
-  "alwaysThinkingEnabled": true,
-  "effortLevel": "high",
   "hooks": {
     "PreToolUse": [
       {
@@ -50,5 +42,14 @@
         ]
       }
     ]
-  }
+  },
+  "enabledPlugins": {
+    "hookify@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
+  "agentPushNotifEnabled": true
 }
