@@ -54,7 +54,7 @@ set_terminal_title() {
 
   local dir repo branch title
 
-  dir="%1~"
+  dir="%2~"
 
   if command git rev-parse --is-inside-work-tree &>/dev/null; then
     repo=$(basename "$(git rev-parse --show-toplevel)")
