@@ -38,6 +38,10 @@ if [ "$TOOL_NAME" = "Bash" ]; then
       ask "Discards uncommitted changes to working tree files" ;;
     git\ branch\ -D\ *)
       ask "Force-deleting branch — unmerged commits will be lost" ;;
+    git\ rebase\ *--onto*)
+      ask "git rebase --onto is error-prone. Before proceeding: (1) create backup: git tag pre-rebase-backup, (2) verify syntax: --onto <newbase> <parent-of-first-commit-to-keep>, (3) state expected commit count" ;;
+    git\ rebase\ *)
+      ask "Before rebasing: (1) create backup: git tag pre-rebase-backup, (2) check for merge commits: git log --merges <base>..HEAD, (3) state expected commit count after rebase" ;;
     chmod\ 777\ *)
       ask "chmod 777 makes files world-writable — usually too permissive" ;;
     *curl*\|*bash*|*curl*\|*sh*|*wget*\|*bash*|*wget*\|*sh*)
