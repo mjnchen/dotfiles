@@ -40,6 +40,17 @@
             "command": "$HOME/Projects/personal/dotfiles/claude/hooks/soft-deny.sh"
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "if": "Bash(git push *)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.command' | grep -qE '^git\\s+push\\s.*\\b(main|master)\\b' && echo '{\"decision\":\"block\",\"reason\":\"Pushing to main/master is blocked. Create a feature branch and push there instead.\"}' || echo '{\"decision\":\"allow\"}'",
+            "statusMessage": "Checking push target..."
+          }
+        ]
       }
     ]
   },
