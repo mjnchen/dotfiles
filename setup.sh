@@ -32,6 +32,10 @@ ln -sf "$DOTFILES/starship/starship.toml" ~/.config/starship.toml
 echo "==> Symlinks: tmux"
 ln -sf "$DOTFILES/tmux/.tmux.conf" ~/.tmux.conf
 
+echo "==> Symlinks: zellij"
+mkdir -p ~/.config/zellij
+ln -sf "$DOTFILES/zellij/config.kdl" ~/.config/zellij/config.kdl
+
 echo "==> Symlinks: Claude"
 mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
