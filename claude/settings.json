@@ -27,7 +27,7 @@
       "Bash(dd *)",
       "Edit(~/.ssh/**)"
     ],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "auto"
   },
   "model": "claude-opus-4-6",
   "hooks": {
