@@ -1,14 +1,9 @@
 // Zellij configuration
 // https://zellij.dev/documentation/configuration
 
-mouse_mode true
-default_mode "locked"
+simplified_ui true
+on_force_close "detach"
+theme "catppuccin-mocha"
 pane_frames false
 show_startup_tips false
 show_release_notes false
-
-keybinds {
-    locked {
-        bind "Ctrl q" { Detach; }
-    }
-}
