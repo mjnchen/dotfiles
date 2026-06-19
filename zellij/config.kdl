@@ -2,3 +2,5 @@
 // https://zellij.dev/documentation/configuration
 //
 // Using defaults — add overrides below as needed.
+
+mouse_mode false
