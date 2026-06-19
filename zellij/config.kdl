@@ -9,6 +9,6 @@ show_release_notes false
 
 keybinds {
     locked {
-        bind "Ctrl-q" { Detach; }
+        bind "Ctrl q" { Detach; }
     }
 }
