@@ -20,11 +20,17 @@
       "Bash(code *)",
       "Bash(cursor *)",
       "Bash(docker port *)",
+      "Bash(docker logs *)",
+      "Bash(git stash *)",
+      "Bash(gh pr create *)",
+      "Bash(gh pr edit *)",
       "Bash(python3 -c \":*)"
     ],
     "deny": [
       "Bash(mkfs *)",
       "Bash(dd *)",
+      "Bash(rm -rf /*)",
+      "Bash(chmod 777 *)",
       "Edit(~/.ssh/**)"
     ],
     "defaultMode": "auto"
