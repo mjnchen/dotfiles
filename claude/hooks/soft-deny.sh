@@ -12,9 +12,7 @@ TOOL_NAME=$(echo "$INPUT" | jq -r '.tool_name // empty' 2>/dev/null)
 TOOL_INPUT=$(echo "$INPUT" | jq -r '.tool_input // empty' 2>/dev/null)
 
 ask() {
-  cat <<EOF
-{"hookSpecificOutput":{"permissionDecision":"ask","permissionDecisionReason":"$1"}}
-EOF
+  jq -n --arg reason "$1" '{"hookSpecificOutput":{"permissionDecision":"ask","permissionDecisionReason":$reason}}'
   exit 0
 }
 

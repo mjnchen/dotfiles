@@ -7,3 +7,6 @@ theme "catppuccin-mocha"
 pane_frames false
 show_startup_tips false
 show_release_notes false
+styled_underlines true
+copy_on_select true
+default_layout "compact"
