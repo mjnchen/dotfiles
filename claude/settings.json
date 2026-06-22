@@ -63,6 +63,10 @@
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "agentPushNotifEnabled": true,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/statusline.sh"
