@@ -42,6 +42,8 @@ mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
 ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
+mkdir -p ~/.claude/skills
+ln -sfn "$DOTFILES/claude/skills/ai-daily-news" ~/.claude/skills/ai-daily-news
 CLAUDE_PROJECT_DIR="${HOME}/.claude/projects/-Users-mchen-Projects-personal-dotfiles"
 mkdir -p "$CLAUDE_PROJECT_DIR"
 ln -sf "$DOTFILES/claude/memory" "$CLAUDE_PROJECT_DIR/memory"
