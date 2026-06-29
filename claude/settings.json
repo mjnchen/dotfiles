@@ -1,4 +1,8 @@
 {
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "permissions": {
     "allow": [
       "Bash(git add *)",
@@ -49,7 +53,6 @@
       },
       {
         "matcher": "Bash",
-        "if": "Bash(git push *)",
         "hooks": [
           {
             "type": "command",
@@ -60,6 +63,10 @@
       }
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline.sh"
+  },
   "enabledPlugins": {
     "hookify@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
@@ -69,12 +76,5 @@
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "agentPushNotifEnabled": true,
-  "attribution": {
-    "commit": "",
-    "pr": ""
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/statusline.sh"
-  }
+  "tui": "fullscreen"
 }
