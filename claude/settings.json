@@ -72,10 +72,14 @@
     "claude-code-setup@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
-    "ralph-wiggum@claude-plugins-official": true
+    "ralph-wiggum@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "huggingface-skills@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
-  "agentPushNotifEnabled": true,
-  "tui": "fullscreen"
+  "tui": "fullscreen",
+  "agentPushNotifEnabled": true
 }
