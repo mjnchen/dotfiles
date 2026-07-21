@@ -45,6 +45,14 @@ export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38b
 
 alias gopersonal="cd ~/Projects/personal"
 
+brew() {
+  command brew "$@"
+  if [[ "$1" == "upgrade" ]]; then
+    echo "Re-linking npm global packages..."
+    npm rebuild -g
+  fi
+}
+
 # ==============================================================================
 #                              GHOSTTY TAB TITLE
 # ==============================================================================
