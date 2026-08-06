@@ -78,5 +78,5 @@ set_terminal_title() {
 precmd_functions+=(set_terminal_title)
 chpwd_functions+=(set_terminal_title)
 
-# Use OrbStack as default Docker runtime (survives Docker Desktop context resets)
-export DOCKER_HOST="unix://$HOME/.orbstack/run/docker.sock"
+# Use Docker Desktop as default Docker runtime
+export DOCKER_HOST="unix://$HOME/.docker/run/docker.sock"
