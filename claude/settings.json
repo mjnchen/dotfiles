@@ -56,7 +56,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "jq -r '.tool_input.command' | grep -qE '^git\\s+push\\s.*\\b(main|master)\\b' && echo '{\"decision\":\"block\",\"reason\":\"Pushing to main/master is blocked. Create a feature branch and push there instead.\"}' || echo '{\"decision\":\"allow\"}'",
+            "command": "jq -r '.tool_input.command' | grep -qE '^git\\s+push\\s.*\\b(main|master)\\b' && echo '{\"hookSpecificOutput\":{\"permissionDecision\":\"deny\",\"permissionDecisionReason\":\"Pushing to main/master is blocked. Create a feature branch and push there instead.\"}}' || true",
             "statusMessage": "Checking push target..."
           }
         ]
