@@ -84,6 +84,11 @@ fi
 echo "==> gh: aliases"
 gh alias set co 'pr checkout' --clobber >/dev/null
 
+# Maya workspace symlinks (not automated — workspaces must exist first):
+#   for i in 0 1 2 3 4; do
+#     ln -s ~/Projects/maya-workspace-$i/maya ~/Projects/maya-ws$i
+#   done
+
 echo ""
 echo "Done! Don't forget to:"
 echo "  - Copy brew/Brewfile.personal.example to ~/.Brewfile.personal and customize"
