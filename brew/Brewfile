@@ -1,4 +1,5 @@
 cask "font-maple-mono-nf-cn"
+cask "brave-browser"
 cask "maccy"
 cask "ollama-app"
 cask "docker-desktop"

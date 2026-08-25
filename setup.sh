@@ -81,6 +81,15 @@ else
   echo "    ~/.obsidian_vault not set — skipping (see obsidian/obsidian_vault.example)"
 fi
 
+echo "==> LaunchAgent: weekly Docker prune (build cache + dangling images)"
+mkdir -p ~/Library/LaunchAgents
+DOCKER_PRUNE_PLIST=~/Library/LaunchAgents/com.mchen.docker-prune.plist
+chmod +x "$DOTFILES/macos/docker-prune.sh"
+sed -e "s|__DOTFILES__|$DOTFILES|g" -e "s|__HOME__|$HOME|g" \
+  "$DOTFILES/macos/com.mchen.docker-prune.plist" > "$DOCKER_PRUNE_PLIST"
+launchctl unload "$DOCKER_PRUNE_PLIST" 2>/dev/null || true
+launchctl load -w "$DOCKER_PRUNE_PLIST"
+
 echo "==> gh: aliases"
 gh alias set co 'pr checkout' --clobber >/dev/null
 
