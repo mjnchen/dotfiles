@@ -40,8 +40,13 @@ ln -sfn "$DOTFILES/zellij/layouts" ~/.config/zellij/layouts
 echo "==> Symlinks: Claude"
 mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
-ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
+# settings.json is COPIED, not symlinked: auto-mode writes a machine/work-specific
+# autoMode.environment block into ~/.claude/settings.json that must never reach this
+# public repo. sync.sh applies the sanitized base while preserving that local block.
+echo "==> Claude settings (copy + preserve local autoMode; not a symlink)"
+chmod +x "$DOTFILES/claude/sync.sh"
+bash "$DOTFILES/claude/sync.sh"
 mkdir -p ~/.claude/skills
 ln -sfn "$DOTFILES/claude/skills/ai-daily-news" ~/.claude/skills/ai-daily-news
 CLAUDE_PROJECT_DIR="${HOME}/.claude/projects/-Users-mchen-Projects-personal-dotfiles"
