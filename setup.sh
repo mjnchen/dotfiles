@@ -49,6 +49,7 @@ chmod +x "$DOTFILES/claude/sync.sh"
 bash "$DOTFILES/claude/sync.sh"
 mkdir -p ~/.claude/skills
 ln -sfn "$DOTFILES/claude/skills/ai-daily-news" ~/.claude/skills/ai-daily-news
+ln -sfn "$DOTFILES/claude/output-styles" ~/.claude/output-styles
 CLAUDE_PROJECT_DIR="${HOME}/.claude/projects/-Users-mchen-Projects-personal-dotfiles"
 mkdir -p "$CLAUDE_PROJECT_DIR"
 ln -sf "$DOTFILES/claude/memory" "$CLAUDE_PROJECT_DIR/memory"
