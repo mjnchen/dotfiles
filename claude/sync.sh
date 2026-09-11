@@ -10,14 +10,36 @@
 #   local file, and this script copies the sanitized repo base into it while
 #   preserving any local autoMode block.
 #
-# Run after editing claude/settings.json (the tracked base):  ./claude/sync.sh
+# Push (default) — after editing claude/settings.json (the tracked base):
+#   ./claude/sync.sh
+# Pull — after changing settings live (e.g. /output-style, /config), capture
+# them back into the tracked base (dropping the local autoMode block):
+#   ./claude/sync.sh pull
 set -eu
 
 DOTFILES="$(cd "$(dirname "$0")/.." && pwd)"
 BASE="$DOTFILES/claude/settings.json"
 TARGET="$HOME/.claude/settings.json"
+MODE="${1:-push}"
 
 mkdir -p "$HOME/.claude"
+
+if [ "$MODE" = "pull" ]; then
+  if [ ! -f "$TARGET" ]; then
+    echo "No $TARGET to pull from." >&2
+    exit 1
+  fi
+  # Sanitized live settings (drop autoMode secret block) -> tracked base.
+  jq 'del(.autoMode)' "$TARGET" > "$BASE.tmp"
+  mv "$BASE.tmp" "$BASE"
+  echo "Pulled $TARGET -> base (autoMode dropped)"
+  exit 0
+fi
+
+if [ "$MODE" != "push" ]; then
+  echo "Usage: sync.sh [push|pull]" >&2
+  exit 1
+fi
 
 # Preserve an existing autoMode block from the real target (if any).
 auto='{}'
