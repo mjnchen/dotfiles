@@ -40,7 +40,7 @@
     "defaultMode": "auto"
   },
   "model": "claude-opus-4-8",
-  "outputStyle": "Concise",
+  "outputStyle": "No Slop",
   "hooks": {
     "PreToolUse": [
       {
