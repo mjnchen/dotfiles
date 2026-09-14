@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Read|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/Projects/personal/dotfiles/claude/hooks/soft-deny.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.command' | grep -qE '^git\\s+push\\s.*[[:space:]/:](main|master)([[:space:]:]|$)' && echo '{\"hookSpecificOutput\":{\"permissionDecision\":\"deny\",\"permissionDecisionReason\":\"Pushing to main/master is blocked. Create a feature branch and push there instead.\"}}' || true",
+            "statusMessage": "Checking push target..."
+          }
+        ]
+      }
+    ]
+  }
+}

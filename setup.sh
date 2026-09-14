@@ -54,6 +54,14 @@ CLAUDE_PROJECT_DIR="${HOME}/.claude/projects/-Users-mchen-Projects-personal-dotf
 mkdir -p "$CLAUDE_PROJECT_DIR"
 ln -sf "$DOTFILES/claude/memory" "$CLAUDE_PROJECT_DIR/memory"
 
+echo "==> Symlinks: Codex"
+# AGENTS.md and hooks.json are user-authored (no secrets); auth lives in
+# ~/.codex/auth.json and app state in config.toml — neither is tracked.
+mkdir -p ~/.codex
+ln -sf "$DOTFILES/codex/AGENTS.md" ~/.codex/AGENTS.md
+ln -sf "$DOTFILES/codex/AGENTS.md" ~/AGENTS.md
+ln -sf "$DOTFILES/codex/hooks.json" ~/.codex/hooks.json
+
 echo "==> Symlinks: Ghostty"
 ln -sf "$DOTFILES/ghostty/config" "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 
