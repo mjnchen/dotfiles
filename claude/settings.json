@@ -61,6 +61,16 @@
             "statusMessage": "Checking push target..."
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/Projects/personal/dotfiles/claude/hooks/check-branch-base.sh",
+            "statusMessage": "Checking branch base vs origin/main..."
+          }
+        ]
       }
     ]
   },
