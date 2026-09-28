@@ -1,0 +1,10 @@
+# Codex model defaults (reference only — NOT symlinked).
+#
+# ~/.codex/config.toml is app-managed state: the ChatGPT/Codex app rewrites it
+# (marketplaces, plugins, project trust levels, cache paths, version pins), so it
+# is intentionally untracked (see setup.sh). This file records only the settings
+# worth carrying to a new machine. Set them via the app's model switcher, or add
+# these two keys to ~/.codex/config.toml by hand:
+
+model = "gpt-6-sol"
+model_reasoning_effort = "high"

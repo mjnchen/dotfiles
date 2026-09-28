@@ -57,6 +57,7 @@ ln -sf "$DOTFILES/claude/memory" "$CLAUDE_PROJECT_DIR/memory"
 echo "==> Symlinks: Codex"
 # AGENTS.md and hooks.json are user-authored (no secrets); auth lives in
 # ~/.codex/auth.json and app state in config.toml — neither is tracked.
+# Model defaults worth carrying to a new machine: see codex/config.toml.example
 mkdir -p ~/.codex
 ln -sf "$DOTFILES/codex/AGENTS.md" ~/.codex/AGENTS.md
 ln -sf "$DOTFILES/codex/AGENTS.md" ~/AGENTS.md
