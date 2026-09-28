@@ -40,7 +40,7 @@
     "defaultMode": "auto"
   },
   "model": "claude-opus-4-8",
-  "outputStyle": "Concise",
+  "outputStyle": "No Slop",
   "hooks": {
     "PreToolUse": [
       {
@@ -59,6 +59,16 @@
             "type": "command",
             "command": "jq -r '.tool_input.command' | grep -qE '^git\\s+push\\s.*\\b(main|master)\\b' && echo '{\"hookSpecificOutput\":{\"permissionDecision\":\"deny\",\"permissionDecisionReason\":\"Pushing to main/master is blocked. Create a feature branch and push there instead.\"}}' || true",
             "statusMessage": "Checking push target..."
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/Projects/personal/dotfiles/claude/hooks/check-branch-base.sh",
+            "statusMessage": "Checking branch base vs origin/main..."
           }
         ]
       }
