@@ -6,5 +6,6 @@
     "claudeCode.preferredLocation": "sidebar",
     "redhat.telemetry.enabled": true,
     "makefile.configureOnOpen": true,
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "claudeCode.hideOnboarding": true
 }
