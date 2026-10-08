@@ -2,7 +2,9 @@
 """Fetch AI news from RSS feeds and return structured JSON."""
 
 import argparse
+import html
 import json
+import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -19,6 +21,21 @@ def fetch_rss(url, timeout=30):
     req = urllib.request.Request(url, headers={"User-Agent": "ai-daily-news/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read()
+
+
+def html_to_text(raw):
+    raw = re.sub(r"<(script|style).*?</\1>", "", raw, flags=re.S)
+    return html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw))).strip()
+
+
+def fetch_content(item):
+    """Full body: feed's content:encoded if present, else the linked page (TLDR's feed has none)."""
+    if item.get("encoded"):
+        return html_to_text(item["encoded"])
+    try:
+        return html_to_text(fetch_rss(item["link"]).decode("utf-8", "ignore"))
+    except Exception:
+        return ""
 
 
 def parse_feed(xml_bytes):
@@ -41,6 +58,7 @@ def parse_feed(xml_bytes):
             "description": (item.find("description").text or "").strip() if item.find("description") is not None else "",
             "date": date_str,
             "pubDate": pub_date,
+            "encoded": (item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or ""),
         })
     return items
 
@@ -49,7 +67,7 @@ def main():
     parser = argparse.ArgumentParser(description="Fetch AI news from RSS feeds")
     parser.add_argument("--date", help="Filter by date (YYYY-MM-DD)")
     parser.add_argument("--date-range", action="store_true", help="Show available date range")
-    parser.add_argument("--source", choices=list(FEEDS.keys()), default="smol.ai", help="RSS source")
+    parser.add_argument("--source", choices=list(FEEDS.keys()), default="TLDR AI", help="RSS source")
     args = parser.parse_args()
 
     url = FEEDS[args.source]
@@ -68,6 +86,11 @@ def main():
 
     if args.date:
         items = [item for item in items if item["date"] == args.date]
+        for item in items:
+            item["content"] = fetch_content(item)
+
+    for item in items:
+        item.pop("encoded", None)
 
     print(json.dumps({"items": items, "count": len(items), "source": args.source}, ensure_ascii=False))
 
