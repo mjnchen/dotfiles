@@ -72,6 +72,17 @@ ln -sf "$DOTFILES/vscode/settings.json" "$HOME/Library/Application Support/Code/
 echo "==> VS Code: custom icon (run vscode/apply-icon.sh manually to apply)"
 chmod +x "$DOTFILES/vscode/apply-icon.sh"
 
+echo "==> Symlinks: Sublime Text"
+SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text"
+mkdir -p "$SUBLIME_DIR/Packages/User" "$SUBLIME_DIR/Installed Packages"
+ln -sf "$DOTFILES/sublime/Preferences.sublime-settings" "$SUBLIME_DIR/Packages/User/Preferences.sublime-settings"
+# Package Control installs anything listed in installed_packages (e.g. Catppuccin) on next launch
+ln -sf "$DOTFILES/sublime/Package Control.sublime-settings" "$SUBLIME_DIR/Packages/User/Package Control.sublime-settings"
+if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]]; then
+  curl -fsSL -o "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" \
+    "https://github.com/sublimehq/package_control/releases/latest/download/Package.Control.sublime-package"
+fi
+
 echo "==> Symlinks: Cursor"
 ln -sf "$DOTFILES/cursor/rules" ~/.cursor/rules
 ln -sf "$DOTFILES/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
