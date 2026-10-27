@@ -1,11 +1,11 @@
 ---
 name: ai-daily-news
-description: Fetches AI news from smol.ai RSS and generates structured markdown with intelligent summarization and categorization. Optionally creates beautiful HTML webpages with Apple-style themes and shareable card images. Use when user asks about AI news, daily tech updates, or wants news organized by date or category.
+description: Fetches AI news from TLDR AI and The Rundown AI RSS and generates structured markdown with intelligent summarization and categorization. Optionally creates beautiful HTML webpages with Apple-style themes and shareable card images. Use when user asks about AI news, daily tech updates, or wants news organized by date or category.
 ---
 
 # AI Daily News
 
-Fetches AI industry news from smol.ai, intelligently summarizes and categorizes using built-in Claude AI capabilities, outputs structured markdown, and optionally generates themed webpages and shareable card images.
+Fetches AI industry news from TLDR AI and The Rundown AI, intelligently summarizes and categorizes using built-in Claude AI capabilities, outputs structured markdown, and optionally generates themed webpages and shareable card images.
 
 ## Quick Start
 
@@ -46,7 +46,7 @@ Copy this checklist to track progress:
 ```
 Progress:
 - [ ] Step 1: Parse date from user request
-- [ ] Step 2: Fetch RSS from smol.ai
+- [ ] Step 2: Fetch RSS from TLDR AI / The Rundown AI
 - [ ] Step 3: Check if content exists for target date
 - [ ] Step 4: Extract and analyze content
 - [ ] Step 5: Generate structured markdown
@@ -79,7 +79,7 @@ Run the fetch script to get RSS data:
 python scripts/fetch_news.py
 ```
 
-This downloads and parses `https://news.smol.ai/rss.xml`, returning structured JSON.
+This downloads and parses the TLDR AI feed (default), returning structured JSON. Use `--source "The Rundown AI"` for the other feed. With `--date`, each item includes a `content` field with the full text (from the feed's `content:encoded`, or the linked page when the feed has none).
 
 **Available dates** can be checked with:
 
@@ -330,16 +330,16 @@ No configuration required. Uses built-in RSS fetching and Claude AI capabilities
 
 | Source | Feed URL | Notes |
 |--------|----------|-------|
-| smol.ai AINews | `https://news.smol.ai/rss.xml` | Community-sourced from X/Twitter, Reddit, Discord — primary source |
-| TLDR AI | `https://tldr.tech/api/rss/ai` | Daily digest, 1.25M subscribers |
-| The Rundown AI | `https://rss.beehiiv.com/feeds/2R3C6Bt5wj.xml` | Daily digest, 2M+ subscribers |
+| TLDR AI | `https://tldr.tech/api/rss/ai` | Primary. Broad coverage (launches, research, engineering, deep dives), links to primary sources; feed has no body, script scrapes `tldr.tech/ai/{date}` |
+| The Rundown AI | `https://rss.beehiiv.com/feeds/2R3C6Bt5wj.xml` | Secondary. Fewer stories with "why it matters" commentary; full body in feed, sponsor-heavy |
+| smol.ai AINews | `https://news.smol.ai/rss.xml` | Stopped updating after 2026-09-09; kept as `--source smol.ai` for older dates |
 
 **Date Calculation**: Uses current UTC date, subtracts days for relative queries.
 
 ### Multi-source Strategy
 
 When fetching news, pull from all available RSS sources for the target date and merge:
-1. Fetch smol.ai, TLDR AI in parallel
+1. Fetch TLDR AI, The Rundown AI in parallel (both publish weekdays only; weekend dates have no content)
 2. Deduplicate stories by URL/title similarity
 3. Merge into unified categorized output, noting source per item
 
@@ -422,7 +422,7 @@ When fetching news, pull from all available RSS sources for the target date and 
 
 **Error**: "Failed to fetch RSS"
 
-**Solution**: Check network connectivity to `news.smol.ai`
+**Solution**: Check network connectivity to `tldr.tech` / `rss.beehiiv.com`
 
 ### Date Parsing Fails
 
