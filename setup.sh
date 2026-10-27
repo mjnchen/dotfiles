@@ -83,6 +83,10 @@ if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]];
     "https://github.com/sublimehq/package_control/releases/latest/download/Package.Control.sublime-package"
 fi
 
+echo "==> Firefox: Betterfox user.js + firefox/user-overrides.js"
+chmod +x "$DOTFILES/firefox/betterfox.sh"
+"$DOTFILES/firefox/betterfox.sh"
+
 echo "==> Symlinks: Cursor"
 ln -sf "$DOTFILES/cursor/rules" ~/.cursor/rules
 ln -sf "$DOTFILES/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"

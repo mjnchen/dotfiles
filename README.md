@@ -19,6 +19,7 @@ Personal configuration files, managed via symlinks.
 | `setup.sh` | one-shot setup script for new machines |
 | `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config` |
 | `sublime/Preferences.sublime-settings` | `~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings` |
+| `firefox/user-overrides.js` | Appended to [Betterfox](https://github.com/yokoffing/Betterfox) `user.js` in the default Firefox profile by `firefox/betterfox.sh` (re-run to update) |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `vscode/default_dark.icns` | `/Applications/Visual Studio Code.app/Contents/Resources/Code.icns` |
 | `cursor/rules/` | `~/.cursor/rules` |
