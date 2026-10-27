@@ -11,6 +11,9 @@ eval "$(starship init zsh)"
 unsetopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY
 
+# Allow `# comments` in pasted command blocks
+setopt INTERACTIVE_COMMENTS
+
 # ==============================================================================
 #                                  PLUGINS
 # ==============================================================================

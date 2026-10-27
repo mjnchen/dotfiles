@@ -29,7 +29,7 @@ remove_login_item() {
 echo "==> LaunchAgents: defunct / unused"
 remove_launchagent "com.bluejeans.app.detector"      # BlueJeans (defunct, Verizon shut down)
 remove_launchagent "com.valvesoftware.steamclean"    # Steam — only if you game
-remove_launchagent "org.virtualbox.vboxwebsrv"       # VirtualBox (using OrbStack instead)
+remove_launchagent "org.virtualbox.vboxwebsrv"       # VirtualBox (uninstalled; using Docker Desktop)
 remove_launchagent "com.spotify.webhelper"           # Spotify web-launcher helper
 remove_launchagent "org.hola.vpn"                    # Hola VPN — security risk, never reinstall
 
@@ -64,6 +64,27 @@ for p in "${hola_paths[@]}"; do
   if [[ -e "$p" ]]; then
     rm -rf "$p"
     echo "  removed: $p"
+  fi
+done
+
+echo "==> Uninstalled VM/remote tools: residual user data (OrbStack, Podman, VirtualBox, RealVNC)"
+vm_paths=(
+  "$HOME/.orbstack"
+  "$HOME/Library/Group Containers/HUAQ24HBR6.dev.orbstack"
+  "$HOME/.local/share/containers"   # Podman machine disk, can be ~9 GB
+  "$HOME/.config/containers"
+  "$HOME/Library/VirtualBox"
+  "$HOME/.vnc"
+  "$HOME/Library/Application Support/com.realvnc.rvncconnect"
+)
+# Report only — deletion is commented out on purpose. These paths are shared with
+# tools you may reinstall later (~/.local/share/containers and ~/.config/containers
+# also hold Podman/Buildah/Skopeo images and config). Review the list, then delete
+# by hand, or uncomment the rm line if you're sure none of these tools are in use.
+for p in "${vm_paths[@]}"; do
+  if [[ -e "$p" ]]; then
+    # rm -rf "$p"
+    echo "  found (not removed): $p"
   fi
 done
 
