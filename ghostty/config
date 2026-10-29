@@ -57,9 +57,11 @@ window-save-state = always
 # theme = Night Owl
 # theme = Builtin Solarized Dark
 # theme = Catppuccin Macchiato
-theme = Catppuccin Mocha
+# theme = Catppuccin Mocha
 # theme = Dracula
 # theme = Kanagawa Dragon
+theme = Rose Pine Moon
+# theme = TokyoNight Night
 
 shell-integration = zsh
 shell-integration-features = no-title

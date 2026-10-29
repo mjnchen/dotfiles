@@ -3,6 +3,7 @@ anysphere.cursorpyright
 anysphere.remote-ssh
 catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
+enkia.tokyo-night
 metaphore.kanagawa-vscode-color-theme
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
@@ -11,3 +12,4 @@ ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
 ms-vscode.makefile-tools
+mvllow.rose-pine

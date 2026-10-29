@@ -3,8 +3,10 @@
 
 simplified_ui true
 on_force_close "detach"
-theme "catppuccin-mocha"
+// theme "catppuccin-mocha"
 // theme "kanagawa-dragon"
+theme "rose-pine-moon"
+// theme "tokyonight-night"
 pane_frames false
 show_startup_tips false
 show_release_notes false
@@ -26,5 +28,33 @@ themes {
         cyan "#8ea4a2"
         white "#c8c093"
         orange "#b6927b"
+    }
+    // Rose Pine Moon (rosepinetheme.com palette); not a Zellij built-in
+    rose-pine-moon {
+        fg "#e0def4"
+        bg "#44415a"
+        black "#232136"
+        red "#eb6f92"
+        green "#3e8fb0"
+        yellow "#f6c177"
+        blue "#9ccfd8"
+        magenta "#c4a7e7"
+        cyan "#ea9a97"
+        white "#e0def4"
+        orange "#ea9a97"
+    }
+    // TokyoNight Night (folke/tokyonight.nvim extras/zellij)
+    tokyonight-night {
+        fg "#c0caf5"
+        bg "#292e42"
+        black "#1a1b26"
+        red "#f7768e"
+        green "#9ece6a"
+        yellow "#e0af68"
+        blue "#7aa2f7"
+        magenta "#bb9af7"
+        cyan "#7dcfff"
+        white "#a9b1d6"
+        orange "#ff9e64"
     }
 }

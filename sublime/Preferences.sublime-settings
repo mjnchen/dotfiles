@@ -1,8 +1,10 @@
 {
 	"font_size": 15,
 	"open_files_in_new_window": false,
-	"color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+	// "color_scheme": "Catppuccin Mocha.sublime-color-scheme",
 	// "color_scheme": "Kanagawa Dragon.sublime-color-scheme",
+	"color_scheme": "Rosé Pine Moon.sublime-color-scheme",
+	// "color_scheme": "tokyonight_night.tmTheme",
 	"ignored_packages":
 	[
 		"Vintage",

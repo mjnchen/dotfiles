@@ -23,8 +23,10 @@ $java\
 $rust\
 $golang"""
 
-palette = 'catppuccin_mocha'
+# palette = 'catppuccin_mocha'
 # palette = 'kanagawa_dragon'
+palette = 'rose_pine_moon'
+# palette = 'tokyonight_night'
 
 [os]
 disabled = false
@@ -173,6 +175,24 @@ green = "#87a987"
 sapphire = "#8ba4b0"
 lavender = "#8992a7"
 crust = "#0d0c0c"
+
+[palettes.tokyonight_night]
+red = "#f7768e"
+peach = "#ff9e64"
+yellow = "#e0af68"
+green = "#9ece6a"
+sapphire = "#7dcfff"
+lavender = "#bb9af7"
+crust = "#16161e"
+
+[palettes.rose_pine_moon]
+red = "#eb6f92"
+peach = "#ea9a97"
+yellow = "#f6c177"
+green = "#3e8fb0"
+sapphire = "#9ccfd8"
+lavender = "#c4a7e7"
+crust = "#232136"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

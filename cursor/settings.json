@@ -4,8 +4,10 @@
         "editor.defaultFormatter": "ms-python.autopep8"
     },
     "makefile.configureOnOpen": true,
-    "workbench.colorTheme": "Catppuccin Mocha",
+    // "workbench.colorTheme": "Catppuccin Mocha",
     // "workbench.colorTheme": "Kanagawa Dragon",
+    "workbench.colorTheme": "Rosé Pine Moon",
+    // "workbench.colorTheme": "Tokyo Night",
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Frappé",
     "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
     "editor.fontLigatures": false,
