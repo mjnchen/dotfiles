@@ -26,9 +26,9 @@ $golang"""
 # palette = 'catppuccin_mocha'
 # palette = 'kanagawa_dragon'
 # palette = 'kanagawa_wave'
-palette = 'rose_pine'
+# palette = 'rose_pine'
 # palette = 'rose_pine_moon'
-# palette = 'tokyonight_night'
+palette = 'tokyonight_night'
 
 [os]
 disabled = false

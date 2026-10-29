@@ -61,9 +61,9 @@ window-save-state = always
 # theme = Dracula
 # theme = Kanagawa Dragon
 # theme = Kanagawa Wave
-theme = Rose Pine
+# theme = Rose Pine
 # theme = Rose Pine Moon
-# theme = TokyoNight Night
+theme = TokyoNight Night
 
 shell-integration = zsh
 shell-integration-features = no-title
