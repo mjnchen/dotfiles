@@ -5,7 +5,9 @@ simplified_ui true
 on_force_close "detach"
 // theme "catppuccin-mocha"
 // theme "kanagawa-dragon"
-theme "rose-pine-moon"
+theme "kanagawa-wave"
+// theme "rose-pine"
+// theme "rose-pine-moon"
 // theme "tokyonight-night"
 pane_frames false
 show_startup_tips false
@@ -28,6 +30,34 @@ themes {
         cyan "#8ea4a2"
         white "#c8c093"
         orange "#b6927b"
+    }
+    // Kanagawa Wave (rebelot/kanagawa.nvim); not a Zellij built-in
+    kanagawa-wave {
+        fg "#dcd7ba"
+        bg "#2a2a37"
+        black "#16161d"
+        red "#e46876"
+        green "#98bb6c"
+        yellow "#e6c384"
+        blue "#7fb4ca"
+        magenta "#957fb8"
+        cyan "#7aa89f"
+        white "#c8c093"
+        orange "#ffa066"
+    }
+    // Rose Pine (rosepinetheme.com palette); not a Zellij built-in
+    rose-pine {
+        fg "#e0def4"
+        bg "#403d52"
+        black "#191724"
+        red "#eb6f92"
+        green "#31748f"
+        yellow "#f6c177"
+        blue "#9ccfd8"
+        magenta "#c4a7e7"
+        cyan "#ebbcba"
+        white "#e0def4"
+        orange "#ebbcba"
     }
     // Rose Pine Moon (rosepinetheme.com palette); not a Zellij built-in
     rose-pine-moon {

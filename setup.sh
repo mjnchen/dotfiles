@@ -78,7 +78,10 @@ mkdir -p "$SUBLIME_DIR/Packages/User" "$SUBLIME_DIR/Installed Packages"
 ln -sf "$DOTFILES/sublime/Preferences.sublime-settings" "$SUBLIME_DIR/Packages/User/Preferences.sublime-settings"
 # Kanagawa Dragon has no Package Control package; scheme from tinted-theming/tinted-sublime-text (MIT)
 ln -sf "$DOTFILES/sublime/Kanagawa Dragon.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Kanagawa Dragon.sublime-color-scheme"
-# Rose Pine Moon scheme from rose-pine/sublime-text (MIT)
+# Kanagawa Wave scheme from rebelot/kanagawa.nvim extras/tmTheme (MIT)
+ln -sf "$DOTFILES/sublime/Kanagawa Wave.tmTheme" "$SUBLIME_DIR/Packages/User/Kanagawa Wave.tmTheme"
+# Rose Pine and Rose Pine Moon schemes from rose-pine/sublime-text (MIT)
+ln -sf "$DOTFILES/sublime/Rosé Pine.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine.sublime-color-scheme"
 ln -sf "$DOTFILES/sublime/Rosé Pine Moon.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine Moon.sublime-color-scheme"
 # TokyoNight Night scheme from folke/tokyonight.nvim extras/sublime (Apache-2.0)
 ln -sf "$DOTFILES/sublime/tokyonight_night.tmTheme" "$SUBLIME_DIR/Packages/User/tokyonight_night.tmTheme"

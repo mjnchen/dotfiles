@@ -25,7 +25,9 @@ $golang"""
 
 # palette = 'catppuccin_mocha'
 # palette = 'kanagawa_dragon'
-palette = 'rose_pine_moon'
+palette = 'kanagawa_wave'
+# palette = 'rose_pine'
+# palette = 'rose_pine_moon'
 # palette = 'tokyonight_night'
 
 [os]
@@ -167,6 +169,15 @@ show_notifications = true
 min_time_to_notify = 45000
 
 # Kanagawa Dragon (rebelot/kanagawa.nvim), mapped onto the Catppuccin key names used above
+[palettes.kanagawa_wave]
+red = "#e46876"
+peach = "#ffa066"
+yellow = "#e6c384"
+green = "#98bb6c"
+sapphire = "#7fb4ca"
+lavender = "#957fb8"
+crust = "#16161d"
+
 [palettes.kanagawa_dragon]
 red = "#c4746e"
 peach = "#b6927b"
@@ -184,6 +195,15 @@ green = "#9ece6a"
 sapphire = "#7dcfff"
 lavender = "#bb9af7"
 crust = "#16161e"
+
+[palettes.rose_pine]
+red = "#eb6f92"
+peach = "#ebbcba"
+yellow = "#f6c177"
+green = "#31748f"
+sapphire = "#9ccfd8"
+lavender = "#c4a7e7"
+crust = "#191724"
 
 [palettes.rose_pine_moon]
 red = "#eb6f92"
