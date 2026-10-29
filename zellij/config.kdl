@@ -3,12 +3,12 @@
 
 simplified_ui true
 on_force_close "detach"
-// theme "catppuccin-mocha"
+theme "catppuccin-mocha"
 // theme "kanagawa-dragon"
 // theme "kanagawa-wave"
 // theme "rose-pine"
 // theme "rose-pine-moon"
-theme "tokyonight-night"
+// theme "tokyonight-night"
 pane_frames false
 show_startup_tips false
 show_release_notes false
