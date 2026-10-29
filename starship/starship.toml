@@ -24,6 +24,7 @@ $rust\
 $golang"""
 
 palette = 'catppuccin_mocha'
+# palette = 'kanagawa_dragon'
 
 [os]
 disabled = false
@@ -162,6 +163,16 @@ style = "fg:lavender"
 disabled = false
 show_notifications = true
 min_time_to_notify = 45000
+
+# Kanagawa Dragon (rebelot/kanagawa.nvim), mapped onto the Catppuccin key names used above
+[palettes.kanagawa_dragon]
+red = "#c4746e"
+peach = "#b6927b"
+yellow = "#c4b28a"
+green = "#87a987"
+sapphire = "#8ba4b0"
+lavender = "#8992a7"
+crust = "#0d0c0c"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

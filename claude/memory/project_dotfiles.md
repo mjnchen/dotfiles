@@ -6,11 +6,11 @@ originSessionId: 60adc810-7c0a-4cd6-b041-a2bfe8c3eb62
 ---
 This is a personal macOS dotfiles repo managed by Martin Chen.
 
-**Shell:** zsh with Starship prompt (Catppuccin Mocha theme), zsh-autosuggestions, zsh-syntax-highlighting. No Oh My Zsh — plugins sourced directly via Homebrew.
+**Shell:** zsh with Starship prompt (Catppuccin Mocha palette), zsh-autosuggestions, zsh-syntax-highlighting. No Oh My Zsh — plugins sourced directly via Homebrew.
 
-**Prompt:** Starship (`starship/starship.toml`) with a powerline-style layout: OS icon → username → directory → git branch/status on the left; language versions (Node, Python, Java, Rust, Go) on the right. Uses Catppuccin Mocha palette.
+**Prompt:** Starship (`starship/starship.toml`) with a powerline-style layout: OS icon → username → directory → git branch/status on the left; language versions (Node, Python, Java, Rust, Go) on the right. Uses Catppuccin Mocha palette (a `kanagawa_dragon` palette is defined but commented out).
 
-**Terminal:** Ghostty with MapleMono NF CN font, Catppuccin Mocha theme, `copy-on-select = clipboard`, `shell-integration = zsh`, `shell-integration-features = no-title` (tab titles managed manually via zsh precmd).
+**Terminal:** Ghostty with MapleMono NF CN font, Catppuccin Mocha theme (Kanagawa Dragon tried 2026-10-28 and reverted; its config is left commented out in each app), `copy-on-select = clipboard`, `shell-integration = zsh`, `shell-integration-features = no-title` (tab titles managed manually via zsh precmd).
 
 **Package management:** Homebrew via `brew/Brewfile` (common) + machine-specific `~/.Brewfile.personal` or `~/.Brewfile.work`. Key brews: fd, fzf, gh, starship, jq, lazygit, node, ripgrep, tmux, yazi, zoxide, zsh-autosuggestions, zsh-syntax-highlighting. Casks: `font-maple-mono-nf-cn`, `maccy` (clipboard manager), `shottr` (screenshot tool). Work-specific adds: awscli, telnet, tmate, cloudflared, helm, k3d, etc.
 
@@ -25,4 +25,4 @@ This is a personal macOS dotfiles repo managed by Martin Chen.
 **History:** `INC_APPEND_HISTORY` (append immediately), `SHARE_HISTORY` disabled (no cross-session sharing).
 
 **Why:** Clean separation of personal vs. work config; Starship was re-added after a revert (commit history shows Starship → revert → re-add with full Catppuccin config).
-**How to apply:** When suggesting prompt/shell changes, work within the Starship + Catppuccin Mocha aesthetic. Machine-specific config goes in `~/.zshrc.personal` or `~/.zshrc.work`, not in the dotfiles repo itself.
+**How to apply:** When suggesting prompt/shell changes, work within the Starship + Catppuccin Mocha aesthetic. Commented-out Kanagawa Dragon alternatives exist in Ghostty, Starship, fzf, Zellij, bat, VS Code/Cursor and Sublime. Machine-specific config goes in `~/.zshrc.personal` or `~/.zshrc.work`, not in the dotfiles repo itself.

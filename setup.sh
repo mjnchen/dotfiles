@@ -76,6 +76,8 @@ echo "==> Symlinks: Sublime Text"
 SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text"
 mkdir -p "$SUBLIME_DIR/Packages/User" "$SUBLIME_DIR/Installed Packages"
 ln -sf "$DOTFILES/sublime/Preferences.sublime-settings" "$SUBLIME_DIR/Packages/User/Preferences.sublime-settings"
+# Kanagawa Dragon has no Package Control package; scheme from tinted-theming/tinted-sublime-text (MIT)
+ln -sf "$DOTFILES/sublime/Kanagawa Dragon.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Kanagawa Dragon.sublime-color-scheme"
 # Package Control installs anything listed in installed_packages (e.g. Catppuccin) on next launch
 ln -sf "$DOTFILES/sublime/Package Control.sublime-settings" "$SUBLIME_DIR/Packages/User/Package Control.sublime-settings"
 if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]]; then

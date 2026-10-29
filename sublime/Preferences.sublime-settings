@@ -2,6 +2,7 @@
 	"font_size": 15,
 	"open_files_in_new_window": false,
 	"color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+	// "color_scheme": "Kanagawa Dragon.sublime-color-scheme",
 	"ignored_packages":
 	[
 		"Vintage",

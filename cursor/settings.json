@@ -5,6 +5,7 @@
     },
     "makefile.configureOnOpen": true,
     "workbench.colorTheme": "Catppuccin Mocha",
+    // "workbench.colorTheme": "Kanagawa Dragon",
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Frappé",
     "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
     "editor.fontLigatures": false,

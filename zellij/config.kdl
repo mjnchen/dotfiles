@@ -4,9 +4,27 @@
 simplified_ui true
 on_force_close "detach"
 theme "catppuccin-mocha"
+// theme "kanagawa-dragon"
 pane_frames false
 show_startup_tips false
 show_release_notes false
 styled_underlines true
 copy_on_select true
 default_layout "compact"
+
+// Kanagawa Dragon (rebelot/kanagawa.nvim); not a Zellij built-in
+themes {
+    kanagawa-dragon {
+        fg "#c5c9c5"
+        bg "#282727"
+        black "#0d0c0c"
+        red "#c4746e"
+        green "#87a987"
+        yellow "#c4b28a"
+        blue "#8ba4b0"
+        magenta "#a292a3"
+        cyan "#8ea4a2"
+        white "#c8c093"
+        orange "#b6927b"
+    }
+}

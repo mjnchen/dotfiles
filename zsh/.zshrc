@@ -40,7 +40,12 @@ export PATH="$HOME/.local/bin:$PATH"
 # ==============================================================================
 
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
+# bat has no Kanagawa theme; "ansi" uses the terminal's palette (Ghostty: Kanagawa Dragon)
+# export BAT_THEME="ansi"
+# Catppuccin Mocha
 export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
+# Kanagawa Dragon
+# export FZF_DEFAULT_OPTS="--color=bg+:#282727,bg:#181616,spinner:#8ea4a2,hl:#c4746e,fg:#c5c9c5,header:#c4746e,info:#8992a7,pointer:#c8c093,marker:#8ea4a2,fg+:#c5c9c5,prompt:#8992a7,hl+:#e46876,border:#625e5a"
 
 # ==============================================================================
 #                                   ALIASES

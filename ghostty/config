@@ -59,6 +59,7 @@ window-save-state = always
 # theme = Catppuccin Macchiato
 theme = Catppuccin Mocha
 # theme = Dracula
+# theme = Kanagawa Dragon
 
 shell-integration = zsh
 shell-integration-features = no-title
