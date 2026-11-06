@@ -8,7 +8,9 @@ eval "$(echo "$input" | jq -r '
   @sh "CTX=\(.context_window.used_percentage // "" | tostring | split(".")[0])",
   @sh "COST=\(.cost.total_cost_usd // 0 | . * 100 | round / 100)",
   @sh "RATE=\(.rate_limits.five_hour.used_percentage // "" | tostring | split(".")[0])",
-  @sh "SID=\(.session_id // "")"
+  @sh "SID=\(.session_id // "")",
+  @sh "CWD=\(.workspace.current_dir // .cwd // "")",
+  @sh "DUR_MS=\(.cost.total_duration_ms // 0 | floor)"
 ')"
 
 # Remote Control: the session's state file carries bridgeSessionId once the bridge is registered.
@@ -28,6 +30,8 @@ RST='\033[0m'
 CYN='\033[36m'
 MAG='\033[35m'
 BLU='\033[34m'
+YLW='\033[33m'
+DIM='\033[2m'
 
 parts=()
 
@@ -38,14 +42,25 @@ if [[ -n "$MODEL" ]]; then
   parts+=("$label")
 fi
 
+BRANCH=$(git -C "$CWD" branch --show-current 2>/dev/null)
+if [[ -n "$BRANCH" ]]; then
+  [[ -n $(git -C "$CWD" status --porcelain 2>/dev/null | head -1) ]] && BRANCH="$BRANCH*"
+  parts+=("${YLW}⎇ ${BRANCH}${RST}")
+fi
+
 [[ -n "$CTX" ]] && parts+=("$(color "$CTX")${CTX}% ctx${RST}")
 (( $(echo "$COST > 0" | bc) )) && parts+=("${MAG}\$$COST${RST}")
 [[ -n "$RATE" ]] && parts+=("$(color "$RATE")${RATE}% 5h${RST}")
+if (( DUR_MS > 0 )); then
+  mins=$(( DUR_MS / 60000 ))
+  if (( mins >= 60 )); then dur="$(( mins / 60 ))h$(( mins % 60 ))m"; else dur="${mins}m"; fi
+  parts+=("${DIM}${dur}${RST}")
+fi
 IFS=' | ' ; left=$(echo -e "${parts[*]}")
 
 # Right-align the Remote Control marker using the width Claude Code passes in COLUMNS.
 if [[ -n "$RC" ]]; then
-  right="⇄ remote"
+  right="◉ RC"
   visible=$(printf '%s' "$left" | sed $'s/\033\\[[0-9;]*m//g')
   # COLUMNS from Claude Code can be stale; ask the Claude process's own TTY for the real width.
   width=${COLUMNS:-80}
