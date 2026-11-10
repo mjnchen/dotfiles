@@ -1,39 +1,69 @@
-# Dracula theme from dracula/lazygit (MIT)
+# Gruvbox Dark (colors from the Gruvbox palette)
 gui:
   theme:
     activeBorderColor:
-      - "#FF79C6"
+      - "#fe8019"
       - bold
     inactiveBorderColor:
-      - "#BD93F9"
-
+      - "#928374"
     searchingActiveBorderColor:
-      - "#8BE9FD"
+      - "#83a598"
       - bold
-
     optionsTextColor:
-      - "#6272A4"
-
+      - "#83a598"
     selectedLineBgColor:
-      - "#6272A4"
-
+      - "#3c3836"
     inactiveViewSelectedLineBgColor:
       - bold
-
     cherryPickedCommitFgColor:
-      - "#6272A4"
-
+      - "#282828"
     cherryPickedCommitBgColor:
-      - "#8BE9FD"
-
+      - "#8ec07c"
     markedBaseCommitFgColor:
-      - "#8BE9FD"
-
+      - "#282828"
     markedBaseCommitBgColor:
-      - "#F1FA8C"
-
+      - "#fabd2f"
     unstagedChangesColor:
-      - "#FF5555"
-
+      - "#fb4934"
     defaultFgColor:
-      - "#F8F8F2"
+      - "#ebdbb2"
+
+# # Dracula theme from dracula/lazygit (MIT)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#FF79C6"
+#       - bold
+#     inactiveBorderColor:
+#       - "#BD93F9"
+
+#     searchingActiveBorderColor:
+#       - "#8BE9FD"
+#       - bold
+
+#     optionsTextColor:
+#       - "#6272A4"
+
+#     selectedLineBgColor:
+#       - "#6272A4"
+
+#     inactiveViewSelectedLineBgColor:
+#       - bold
+
+#     cherryPickedCommitFgColor:
+#       - "#6272A4"
+
+#     cherryPickedCommitBgColor:
+#       - "#8BE9FD"
+
+#     markedBaseCommitFgColor:
+#       - "#8BE9FD"
+
+#     markedBaseCommitBgColor:
+#       - "#F1FA8C"
+
+#     unstagedChangesColor:
+#       - "#FF5555"
+
+#     defaultFgColor:
+#       - "#F8F8F2"
