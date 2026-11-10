@@ -14,3 +14,4 @@ ms-python.debugpy
 ms-python.python
 ms-vscode.makefile-tools
 mvllow.rose-pine
+teabyii.ayu

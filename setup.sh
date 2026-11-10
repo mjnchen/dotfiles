@@ -93,6 +93,8 @@ ln -sf "$DOTFILES/sublime/Rosé Pine.sublime-color-scheme" "$SUBLIME_DIR/Package
 ln -sf "$DOTFILES/sublime/Rosé Pine Moon.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine Moon.sublime-color-scheme"
 # Dracula scheme from dracula/sublime (MIT)
 ln -sf "$DOTFILES/sublime/Dracula.tmTheme" "$SUBLIME_DIR/Packages/User/Dracula.tmTheme"
+# Ayu Mirage scheme from dempfi/ayu (MIT)
+ln -sf "$DOTFILES/sublime/ayu-mirage.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/ayu-mirage.sublime-color-scheme"
 # Package Control installs anything listed in installed_packages (e.g. Catppuccin) on next launch
 ln -sf "$DOTFILES/sublime/Package Control.sublime-settings" "$SUBLIME_DIR/Packages/User/Package Control.sublime-settings"
 if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]]; then
