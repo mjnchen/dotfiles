@@ -9,8 +9,8 @@ on_force_close "detach"
 // theme "rose-pine"
 // theme "rose-pine-moon"
 // theme "tokyonight-night"
-// theme "dracula"
-theme "gruvbox-dark"
+theme "dracula"
+// theme "gruvbox-dark"
 pane_frames false
 show_startup_tips false
 show_release_notes false

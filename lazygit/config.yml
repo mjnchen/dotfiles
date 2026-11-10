@@ -1,69 +1,69 @@
-# Gruvbox Dark (colors from the Gruvbox palette)
+# Dracula theme from dracula/lazygit (MIT)
 gui:
   theme:
     activeBorderColor:
-      - "#fe8019"
+      - "#FF79C6"
       - bold
     inactiveBorderColor:
-      - "#928374"
+      - "#BD93F9"
+
     searchingActiveBorderColor:
-      - "#83a598"
+      - "#8BE9FD"
       - bold
+
     optionsTextColor:
-      - "#83a598"
+      - "#6272A4"
+
     selectedLineBgColor:
-      - "#3c3836"
+      - "#6272A4"
+
     inactiveViewSelectedLineBgColor:
       - bold
-    cherryPickedCommitFgColor:
-      - "#282828"
-    cherryPickedCommitBgColor:
-      - "#8ec07c"
-    markedBaseCommitFgColor:
-      - "#282828"
-    markedBaseCommitBgColor:
-      - "#fabd2f"
-    unstagedChangesColor:
-      - "#fb4934"
-    defaultFgColor:
-      - "#ebdbb2"
 
-# # Dracula theme from dracula/lazygit (MIT)
+    cherryPickedCommitFgColor:
+      - "#6272A4"
+
+    cherryPickedCommitBgColor:
+      - "#8BE9FD"
+
+    markedBaseCommitFgColor:
+      - "#8BE9FD"
+
+    markedBaseCommitBgColor:
+      - "#F1FA8C"
+
+    unstagedChangesColor:
+      - "#FF5555"
+
+    defaultFgColor:
+      - "#F8F8F2"
+
+# # Gruvbox Dark (colors from the Gruvbox palette)
 # gui:
 #   theme:
 #     activeBorderColor:
-#       - "#FF79C6"
+#       - "#fe8019"
 #       - bold
 #     inactiveBorderColor:
-#       - "#BD93F9"
-
+#       - "#928374"
 #     searchingActiveBorderColor:
-#       - "#8BE9FD"
+#       - "#83a598"
 #       - bold
-
 #     optionsTextColor:
-#       - "#6272A4"
-
+#       - "#83a598"
 #     selectedLineBgColor:
-#       - "#6272A4"
-
+#       - "#3c3836"
 #     inactiveViewSelectedLineBgColor:
 #       - bold
-
 #     cherryPickedCommitFgColor:
-#       - "#6272A4"
-
+#       - "#282828"
 #     cherryPickedCommitBgColor:
-#       - "#8BE9FD"
-
+#       - "#8ec07c"
 #     markedBaseCommitFgColor:
-#       - "#8BE9FD"
-
+#       - "#282828"
 #     markedBaseCommitBgColor:
-#       - "#F1FA8C"
-
+#       - "#fabd2f"
 #     unstagedChangesColor:
-#       - "#FF5555"
-
+#       - "#fb4934"
 #     defaultFgColor:
-#       - "#F8F8F2"
+#       - "#ebdbb2"
