@@ -37,6 +37,14 @@ mkdir -p ~/.config/zellij
 ln -sf "$DOTFILES/zellij/config.kdl" ~/.config/zellij/config.kdl
 ln -sfn "$DOTFILES/zellij/layouts" ~/.config/zellij/layouts
 
+echo "==> Symlinks: btop"
+mkdir -p ~/.config/btop
+ln -sf "$DOTFILES/btop/btop.conf" ~/.config/btop/btop.conf
+
+echo "==> Symlinks: lazygit"
+mkdir -p "$HOME/Library/Application Support/lazygit"
+ln -sf "$DOTFILES/lazygit/config.yml" "$HOME/Library/Application Support/lazygit/config.yml"
+
 echo "==> Symlinks: Claude"
 mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
@@ -85,6 +93,8 @@ ln -sf "$DOTFILES/sublime/Rosé Pine.sublime-color-scheme" "$SUBLIME_DIR/Package
 ln -sf "$DOTFILES/sublime/Rosé Pine Moon.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine Moon.sublime-color-scheme"
 # TokyoNight Night scheme from folke/tokyonight.nvim extras/sublime (Apache-2.0)
 ln -sf "$DOTFILES/sublime/tokyonight_night.tmTheme" "$SUBLIME_DIR/Packages/User/tokyonight_night.tmTheme"
+# Dracula scheme from dracula/sublime (MIT)
+ln -sf "$DOTFILES/sublime/Dracula.tmTheme" "$SUBLIME_DIR/Packages/User/Dracula.tmTheme"
 # Package Control installs anything listed in installed_packages (e.g. Catppuccin) on next launch
 ln -sf "$DOTFILES/sublime/Package Control.sublime-settings" "$SUBLIME_DIR/Packages/User/Package Control.sublime-settings"
 if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]]; then
