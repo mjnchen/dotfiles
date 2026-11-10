@@ -1,33 +1,33 @@
-# # Rose Pine (rose-pine/lazygit, MIT)
-# gui:
-#   theme:
-#     activeBorderColor:
-#       - "#31748f"
-#       - bold
-#     inactiveBorderColor:
-#       - "#6e6a86"
-#     searchingActiveBorderColor:
-#       - "#ebbcba"
-#       - bold
-#     optionsTextColor:
-#       - "#9ccfd8"
-#     selectedLineBgColor:
-#       - "#31748f"
-#     inactiveViewSelectedLineBgColor:
-#       - "#26233a"
-#       - bold
-#     cherryPickedCommitFgColor:
-#       - "#1f1d2e"
-#     cherryPickedCommitBgColor:
-#       - "#ebbcba"
-#     markedBaseCommitFgColor:
-#       - "#9ccfd8"
-#     markedBaseCommitBgColor:
-#       - "#f6c177"
-#     unstagedChangesColor:
-#       - "#eb6f92"
-#     defaultFgColor:
-#       - "#e0def4"
+# Rose Pine (rose-pine/lazygit, MIT)
+gui:
+  theme:
+    activeBorderColor:
+      - "#31748f"
+      - bold
+    inactiveBorderColor:
+      - "#6e6a86"
+    searchingActiveBorderColor:
+      - "#ebbcba"
+      - bold
+    optionsTextColor:
+      - "#9ccfd8"
+    selectedLineBgColor:
+      - "#31748f"
+    inactiveViewSelectedLineBgColor:
+      - "#26233a"
+      - bold
+    cherryPickedCommitFgColor:
+      - "#1f1d2e"
+    cherryPickedCommitBgColor:
+      - "#ebbcba"
+    markedBaseCommitFgColor:
+      - "#9ccfd8"
+    markedBaseCommitBgColor:
+      - "#f6c177"
+    unstagedChangesColor:
+      - "#eb6f92"
+    defaultFgColor:
+      - "#e0def4"
 
 # # TokyoNight Moon (folke/tokyonight.nvim extras/lazygit, Apache-2.0)
 # gui:
@@ -206,42 +206,42 @@
 #     defaultFgColor:
 #       - "#bfbdb6"
 
-# Dracula theme from dracula/lazygit (MIT)
-gui:
-  theme:
-    activeBorderColor:
-      - "#FF79C6"
-      - bold
-    inactiveBorderColor:
-      - "#BD93F9"
-
-    searchingActiveBorderColor:
-      - "#8BE9FD"
-      - bold
-
-    optionsTextColor:
-      - "#6272A4"
-
-    selectedLineBgColor:
-      - "#6272A4"
-
-    inactiveViewSelectedLineBgColor:
-      - bold
-
-    cherryPickedCommitFgColor:
-      - "#6272A4"
-
-    cherryPickedCommitBgColor:
-      - "#8BE9FD"
-
-    markedBaseCommitFgColor:
-      - "#8BE9FD"
-
-    markedBaseCommitBgColor:
-      - "#F1FA8C"
-
-    unstagedChangesColor:
-      - "#FF5555"
-
-    defaultFgColor:
-      - "#F8F8F2"
+# # Dracula theme from dracula/lazygit (MIT)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#FF79C6"
+#       - bold
+#     inactiveBorderColor:
+#       - "#BD93F9"
+#
+#     searchingActiveBorderColor:
+#       - "#8BE9FD"
+#       - bold
+#
+#     optionsTextColor:
+#       - "#6272A4"
+#
+#     selectedLineBgColor:
+#       - "#6272A4"
+#
+#     inactiveViewSelectedLineBgColor:
+#       - bold
+#
+#     cherryPickedCommitFgColor:
+#       - "#6272A4"
+#
+#     cherryPickedCommitBgColor:
+#       - "#8BE9FD"
+#
+#     markedBaseCommitFgColor:
+#       - "#8BE9FD"
+#
+#     markedBaseCommitBgColor:
+#       - "#F1FA8C"
+#
+#     unstagedChangesColor:
+#       - "#FF5555"
+#
+#     defaultFgColor:
+#       - "#F8F8F2"
