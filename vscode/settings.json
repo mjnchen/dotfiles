@@ -2,11 +2,11 @@
     // "workbench.colorTheme": "Catppuccin Mocha",
     // "workbench.colorTheme": "Kanagawa Dragon",
     // "workbench.colorTheme": "Kanagawa Wave",
-    "workbench.colorTheme": "Rosé Pine",
+    // "workbench.colorTheme": "Rosé Pine",
     // "workbench.colorTheme": "Rosé Pine Moon",
     // "workbench.colorTheme": "Tokyo Night",
     // TokyoNight Moon has no official VS Code port; Storm is the closest
-    // "workbench.colorTheme": "Tokyo Night Storm",
+    "workbench.colorTheme": "Tokyo Night Storm",
     // "workbench.colorTheme": "Dracula Theme",
     // "workbench.colorTheme": "Gruvbox Dark Medium",
     // "workbench.colorTheme": "Ayu Dark",

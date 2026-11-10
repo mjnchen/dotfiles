@@ -61,10 +61,10 @@ window-save-state = always
 # theme = Gruvbox Dark
 # theme = Kanagawa Dragon
 # theme = Kanagawa Wave
-theme = Rose Pine
+# theme = Rose Pine
 # theme = Rose Pine Moon
 # theme = TokyoNight Night
-# theme = TokyoNight Storm
+theme = TokyoNight Storm
 # theme = TokyoNight Moon
 
 shell-integration = zsh

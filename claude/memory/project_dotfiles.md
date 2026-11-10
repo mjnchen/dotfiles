@@ -6,11 +6,11 @@ originSessionId: 60adc810-7c0a-4cd6-b041-a2bfe8c3eb62
 ---
 This is a personal macOS dotfiles repo managed by Martin Chen.
 
-**Shell:** zsh with Starship prompt (customized catppuccin-powerline layout, Rose Pine palette), zsh-autosuggestions, zsh-syntax-highlighting. No Oh My Zsh — plugins sourced directly via Homebrew.
+**Shell:** zsh with Starship prompt (customized catppuccin-powerline layout, TokyoNight Storm palette), zsh-autosuggestions, zsh-syntax-highlighting. No Oh My Zsh — plugins sourced directly via Homebrew.
 
-**Prompt:** Starship (`starship/starship.toml`) is a customized catppuccin-powerline layout: OS icon → username → full directory → git branch/status on the left, `❯` on a second line; cmd_duration (with notifications over 45s) and language versions on the right. Active palette `rose_pine`; other palettes (Catppuccin, Rose Pine Moon, TokyoNight Night/Storm/Moon, Kanagawa, Dracula, Gruvbox Dark, Ayu) use the same Catppuccin key names and are toggled by the `palette =` line. Nerd Font characters (edges, icons) were missing for a long time and were restored 2026-11-09; if edges look flat again, check the file still contains private-use glyphs. Stock presets (gruvbox-rainbow, catppuccin-powerline) and a minimal Pure-style prompt were tried that day and rejected; the user prefers this powerline look.
+**Prompt:** Starship (`starship/starship.toml`) is a customized catppuccin-powerline layout: OS icon → username → full directory → git branch/status on the left, `❯` on a second line; cmd_duration (with notifications over 45s) and language versions on the right. Active palette `tokyonight_storm`; other palettes (Catppuccin, Rose Pine/Moon, TokyoNight Night/Moon, Kanagawa, Dracula, Gruvbox Dark, Ayu) use the same Catppuccin key names and are toggled by the `palette =` line. Nerd Font characters (edges, icons) were missing for a long time and were restored 2026-11-09; if edges look flat again, check the file still contains private-use glyphs. Stock presets (gruvbox-rainbow, catppuccin-powerline) and a minimal Pure-style prompt were tried that day and rejected; the user prefers this powerline look.
 
-**Terminal:** Ghostty with MapleMono NF CN font, Rose Pine theme (active since 2026-11-09; the other themes are left commented out in each app), `copy-on-select = clipboard`, `shell-integration = zsh`, `shell-integration-features = no-title` (tab titles managed manually via zsh precmd).
+**Terminal:** Ghostty with MapleMono NF CN font, TokyoNight Storm theme (active since 2026-11-09; the other themes are left commented out in each app), `copy-on-select = clipboard`, `shell-integration = zsh`, `shell-integration-features = no-title` (tab titles managed manually via zsh precmd).
 
 **Package management:** Homebrew via `brew/Brewfile` (common) + machine-specific `~/.Brewfile.personal` or `~/.Brewfile.work`. Key brews: fd, fzf, gh, starship, jq, lazygit, node, ripgrep, tmux, yazi, zoxide, zsh-autosuggestions, zsh-syntax-highlighting. Casks: `font-maple-mono-nf-cn`, `maccy` (clipboard manager), `shottr` (screenshot tool). Work-specific adds: awscli, telnet, tmate, cloudflared, helm, k3d, etc.
 
@@ -25,6 +25,6 @@ This is a personal macOS dotfiles repo managed by Martin Chen.
 **History:** `INC_APPEND_HISTORY` (append immediately), `SHARE_HISTORY` disabled (no cross-session sharing).
 
 **Why:** Clean separation of personal vs. work config; Starship was re-added after a revert (commit history shows Starship → revert → re-add with full Catppuccin config).
-**How to apply:** When suggesting prompt/shell changes, work within the customized Starship layout + Rose Pine aesthetic. Rose Pine is set in every app (btop TTY and bat ansi follow Ghostty). Commented-out alternative themes exist in Ghostty, fzf, Zellij, VS Code/Cursor and Sublime; switching means toggling one line per app. Machine-specific config goes in `~/.zshrc.personal` or `~/.zshrc.work`, not in the dotfiles repo itself.
+**How to apply:** When suggesting prompt/shell changes, work within the customized Starship layout + TokyoNight Storm aesthetic. TokyoNight Storm is set in every app (btop TTY and bat ansi follow Ghostty). Commented-out alternative themes exist in Ghostty, fzf, Zellij, VS Code/Cursor and Sublime; switching means toggling one line per app. Machine-specific config goes in `~/.zshrc.personal` or `~/.zshrc.work`, not in the dotfiles repo itself.
 
 **Theme preferences (2026-11-09):** Catppuccin Mocha is the most preferred theme; Rose Pine is second.
