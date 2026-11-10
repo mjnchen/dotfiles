@@ -1,32 +1,150 @@
-# Catppuccin Mocha (catppuccin/lazygit, blue accent, MIT)
+# Rose Pine (rose-pine/lazygit, MIT)
 gui:
   theme:
     activeBorderColor:
-      - "#89b4fa"
+      - "#31748f"
       - bold
     inactiveBorderColor:
-      - "#a6adc8"
+      - "#6e6a86"
     searchingActiveBorderColor:
-      - "#f9e2af"
+      - "#ebbcba"
       - bold
     optionsTextColor:
-      - "#89b4fa"
+      - "#9ccfd8"
     selectedLineBgColor:
-      - "#313244"
+      - "#31748f"
     inactiveViewSelectedLineBgColor:
+      - "#26233a"
       - bold
     cherryPickedCommitFgColor:
-      - "#89b4fa"
+      - "#1f1d2e"
     cherryPickedCommitBgColor:
-      - "#45475a"
+      - "#ebbcba"
     markedBaseCommitFgColor:
-      - "#89b4fa"
+      - "#9ccfd8"
     markedBaseCommitBgColor:
-      - "#f9e2af"
+      - "#f6c177"
     unstagedChangesColor:
-      - "#f38ba8"
+      - "#eb6f92"
     defaultFgColor:
-      - "#cdd6f4"
+      - "#e0def4"
+
+# # TokyoNight Moon (folke/tokyonight.nvim extras/lazygit, Apache-2.0)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#ff966c"
+#       - bold
+#     inactiveBorderColor:
+#       - "#589ed7"
+#     searchingActiveBorderColor:
+#       - "#ff966c"
+#       - bold
+#     optionsTextColor:
+#       - "#82aaff"
+#     selectedLineBgColor:
+#       - "#2d3f76"
+#     cherryPickedCommitFgColor:
+#       - "#82aaff"
+#     cherryPickedCommitBgColor:
+#       - "#c099ff"
+#     markedBaseCommitFgColor:
+#       - "#82aaff"
+#     markedBaseCommitBgColor:
+#       - "#ffc777"
+#     unstagedChangesColor:
+#       - "#c53b53"
+#     defaultFgColor:
+#       - "#c8d3f5"
+
+# # Rose Pine Moon (rose-pine/lazygit, MIT)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#3e8fb0"
+#       - bold
+#     inactiveBorderColor:
+#       - "#6e6a86"
+#     searchingActiveBorderColor:
+#       - "#ea9a97"
+#       - bold
+#     optionsTextColor:
+#       - "#9ccfd8"
+#     selectedLineBgColor:
+#       - "#3e8fb0"
+#     inactiveViewSelectedLineBgColor:
+#       - "#393552"
+#       - bold
+#     cherryPickedCommitFgColor:
+#       - "#2a273f"
+#     cherryPickedCommitBgColor:
+#       - "#ea9a97"
+#     markedBaseCommitFgColor:
+#       - "#9ccfd8"
+#     markedBaseCommitBgColor:
+#       - "#f6c177"
+#     unstagedChangesColor:
+#       - "#eb6f92"
+#     defaultFgColor:
+#       - "#e0def4"
+
+# # TokyoNight Storm (folke/tokyonight.nvim extras/lazygit, Apache-2.0)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#ff9e64"
+#       - bold
+#     inactiveBorderColor:
+#       - "#29a4bd"
+#     searchingActiveBorderColor:
+#       - "#ff9e64"
+#       - bold
+#     optionsTextColor:
+#       - "#7aa2f7"
+#     selectedLineBgColor:
+#       - "#2e3c64"
+#     cherryPickedCommitFgColor:
+#       - "#7aa2f7"
+#     cherryPickedCommitBgColor:
+#       - "#bb9af7"
+#     markedBaseCommitFgColor:
+#       - "#7aa2f7"
+#     markedBaseCommitBgColor:
+#       - "#e0af68"
+#     unstagedChangesColor:
+#       - "#db4b4b"
+#     defaultFgColor:
+#       - "#c0caf5"
+
+# # Catppuccin Mocha (catppuccin/lazygit, blue accent, MIT)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#89b4fa"
+#       - bold
+#     inactiveBorderColor:
+#       - "#a6adc8"
+#     searchingActiveBorderColor:
+#       - "#f9e2af"
+#       - bold
+#     optionsTextColor:
+#       - "#89b4fa"
+#     selectedLineBgColor:
+#       - "#313244"
+#     inactiveViewSelectedLineBgColor:
+#       - bold
+#     cherryPickedCommitFgColor:
+#       - "#89b4fa"
+#     cherryPickedCommitBgColor:
+#       - "#45475a"
+#     markedBaseCommitFgColor:
+#       - "#89b4fa"
+#     markedBaseCommitBgColor:
+#       - "#f9e2af"
+#     unstagedChangesColor:
+#       - "#f38ba8"
+#     defaultFgColor:
+#       - "#cdd6f4"
 
 # # Gruvbox Dark (colors from the Gruvbox palette)
 # gui:
