@@ -3,7 +3,7 @@
 
 simplified_ui true
 on_force_close "detach"
-theme "catppuccin-mocha"
+// theme "catppuccin-mocha"
 // theme "kanagawa-dragon"
 // theme "kanagawa-wave"
 // theme "rose-pine"
@@ -11,7 +11,7 @@ theme "catppuccin-mocha"
 // theme "tokyonight-night"
 // theme "tokyo-night-storm"
 // theme "tokyonight-moon"
-// theme "dracula"
+theme "dracula"
 // theme "ayu-dark"
 // theme "gruvbox-dark"
 pane_frames false
