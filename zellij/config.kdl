@@ -3,13 +3,13 @@
 
 simplified_ui true
 on_force_close "detach"
-// theme "catppuccin-mocha"
+theme "catppuccin-mocha"
 // theme "kanagawa-dragon"
 // theme "kanagawa-wave"
 // theme "rose-pine"
 // theme "rose-pine-moon"
 // theme "tokyonight-night"
-theme "tokyo-night-storm"
+// theme "tokyo-night-storm"
 // theme "tokyonight-moon"
 // theme "dracula"
 // theme "ayu-dark"

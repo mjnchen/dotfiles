@@ -47,13 +47,13 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
 # Gruvbox Dark (bat built-in)
 # export BAT_THEME="gruvbox-dark"
 # Catppuccin Mocha (bat built-in)
-# export BAT_THEME="Catppuccin Mocha"
+export BAT_THEME="Catppuccin Mocha"
 # TokyoNight / Rose Pine: bat has neither; "ansi" uses Ghostty's palette
-export BAT_THEME="ansi"
+# export BAT_THEME="ansi"
 # Ayu Dark: bat has no Ayu theme; "ansi" uses Ghostty's palette
 # export BAT_THEME="ansi"
 # Catppuccin Mocha
-# export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
+export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
 # Kanagawa Dragon
 # export FZF_DEFAULT_OPTS="--color=bg+:#282727,bg:#181616,spinner:#8ea4a2,hl:#c4746e,fg:#c5c9c5,header:#c4746e,info:#8992a7,pointer:#c8c093,marker:#8ea4a2,fg+:#c5c9c5,prompt:#8992a7,hl+:#e46876,border:#625e5a"
 # Kanagawa Wave
@@ -67,7 +67,7 @@ export BAT_THEME="ansi"
 # TokyoNight Moon (colors from folke/tokyonight.nvim extras/fzf)
 # export FZF_DEFAULT_OPTS="--color=bg+:#2d3f76,bg:#1e2030,border:#589ed7,fg:#c8d3f5,gutter:#1e2030,header:#ff966c,hl+:#65bcff,hl:#65bcff,info:#545c7e,marker:#ff007c,pointer:#ff007c,prompt:#65bcff,query:#c8d3f5:regular,scrollbar:#589ed7,separator:#ff966c,spinner:#ff007c"
 # TokyoNight Storm (colors from folke/tokyonight.nvim extras/fzf)
-export FZF_DEFAULT_OPTS="--color=bg+:#2e3c64,bg:#1f2335,border:#29a4bd,fg:#c0caf5,gutter:#1f2335,header:#ff9e64,hl+:#2ac3de,hl:#2ac3de,info:#545c7e,marker:#ff007c,pointer:#ff007c,prompt:#2ac3de,query:#c0caf5:regular,scrollbar:#29a4bd,separator:#ff9e64,spinner:#ff007c"
+# export FZF_DEFAULT_OPTS="--color=bg+:#2e3c64,bg:#1f2335,border:#29a4bd,fg:#c0caf5,gutter:#1f2335,header:#ff9e64,hl+:#2ac3de,hl:#2ac3de,info:#545c7e,marker:#ff007c,pointer:#ff007c,prompt:#2ac3de,query:#c0caf5:regular,scrollbar:#29a4bd,separator:#ff9e64,spinner:#ff007c"
 # Dracula (dracula/fzf)
 # export FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9,fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9,info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6,marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
 # Gruvbox Dark (colors from the Gruvbox palette)
