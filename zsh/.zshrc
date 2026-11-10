@@ -43,11 +43,15 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
 # bat has no Kanagawa theme; "ansi" uses the terminal's palette (Ghostty: Kanagawa Dragon)
 # export BAT_THEME="ansi"
 # Dracula (bat built-in; delta also reads BAT_THEME)
-export BAT_THEME="Dracula"
+# export BAT_THEME="Dracula"
 # Gruvbox Dark (bat built-in)
 # export BAT_THEME="gruvbox-dark"
+# Catppuccin Mocha (bat built-in)
+export BAT_THEME="Catppuccin Mocha"
+# Ayu Dark: bat has no Ayu theme; "ansi" uses Ghostty's palette
+# export BAT_THEME="ansi"
 # Catppuccin Mocha
-# export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
+export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
 # Kanagawa Dragon
 # export FZF_DEFAULT_OPTS="--color=bg+:#282727,bg:#181616,spinner:#8ea4a2,hl:#c4746e,fg:#c5c9c5,header:#c4746e,info:#8992a7,pointer:#c8c093,marker:#8ea4a2,fg+:#c5c9c5,prompt:#8992a7,hl+:#e46876,border:#625e5a"
 # Kanagawa Wave
@@ -59,9 +63,11 @@ export BAT_THEME="Dracula"
 # TokyoNight Night (colors from folke/tokyonight.nvim extras/fzf)
 # export FZF_DEFAULT_OPTS="--color=bg+:#283457,bg:#16161e,border:#27a1b9,fg:#c0caf5,gutter:#16161e,header:#ff9e64,hl+:#2ac3de,hl:#2ac3de,info:#545c7e,marker:#ff007c,pointer:#ff007c,prompt:#2ac3de,query:#c0caf5:regular,scrollbar:#27a1b9,separator:#ff9e64,spinner:#ff007c"
 # Dracula (dracula/fzf)
-export FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9,fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9,info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6,marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+# export FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9,fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9,info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6,marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
 # Gruvbox Dark (colors from the Gruvbox palette)
 # export FZF_DEFAULT_OPTS="--color=bg+:#3c3836,bg:#282828,spinner:#8ec07c,hl:#fabd2f,fg:#ebdbb2,header:#928374,info:#83a598,pointer:#fe8019,marker:#fb4934,fg+:#fbf1c7,prompt:#fe8019,hl+:#fabd2f,border:#504945"
+# Ayu Dark (colors from the ayu palette)
+# export FZF_DEFAULT_OPTS="--color=fg:#bfbdb6,bg:#0b0e14,hl:#e6b450,fg+:#bfbdb6,bg+:#1b395a,hl+:#e6b450,info:#59c2ff,prompt:#ffb454,pointer:#f29668,marker:#aad94c,spinner:#95e6cb,header:#565b66"
 
 # ==============================================================================
 #                                   ALIASES

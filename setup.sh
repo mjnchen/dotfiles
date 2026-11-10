@@ -97,6 +97,8 @@ ln -sf "$DOTFILES/sublime/tokyonight_night.tmTheme" "$SUBLIME_DIR/Packages/User/
 ln -sf "$DOTFILES/sublime/Dracula.tmTheme" "$SUBLIME_DIR/Packages/User/Dracula.tmTheme"
 # Gruvbox Dark (Medium) scheme from Briles/gruvbox (MIT)
 ln -sf "$DOTFILES/sublime/gruvbox (Dark) (Medium).sublime-color-scheme" "$SUBLIME_DIR/Packages/User/gruvbox (Dark) (Medium).sublime-color-scheme"
+# Ayu Dark scheme from dempfi/ayu (MIT)
+ln -sf "$DOTFILES/sublime/ayu-dark.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/ayu-dark.sublime-color-scheme"
 # Package Control installs anything listed in installed_packages (e.g. Catppuccin) on next launch
 ln -sf "$DOTFILES/sublime/Package Control.sublime-settings" "$SUBLIME_DIR/Packages/User/Package Control.sublime-settings"
 if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]]; then

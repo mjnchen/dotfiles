@@ -1,42 +1,32 @@
-# Dracula theme from dracula/lazygit (MIT)
+# Catppuccin Mocha (catppuccin/lazygit, blue accent, MIT)
 gui:
   theme:
     activeBorderColor:
-      - "#FF79C6"
+      - "#89b4fa"
       - bold
     inactiveBorderColor:
-      - "#BD93F9"
-
+      - "#a6adc8"
     searchingActiveBorderColor:
-      - "#8BE9FD"
+      - "#f9e2af"
       - bold
-
     optionsTextColor:
-      - "#6272A4"
-
+      - "#89b4fa"
     selectedLineBgColor:
-      - "#6272A4"
-
+      - "#313244"
     inactiveViewSelectedLineBgColor:
       - bold
-
     cherryPickedCommitFgColor:
-      - "#6272A4"
-
+      - "#89b4fa"
     cherryPickedCommitBgColor:
-      - "#8BE9FD"
-
+      - "#45475a"
     markedBaseCommitFgColor:
-      - "#8BE9FD"
-
+      - "#89b4fa"
     markedBaseCommitBgColor:
-      - "#F1FA8C"
-
+      - "#f9e2af"
     unstagedChangesColor:
-      - "#FF5555"
-
+      - "#f38ba8"
     defaultFgColor:
-      - "#F8F8F2"
+      - "#cdd6f4"
 
 # # Gruvbox Dark (colors from the Gruvbox palette)
 # gui:
@@ -67,3 +57,73 @@ gui:
 #       - "#fb4934"
 #     defaultFgColor:
 #       - "#ebdbb2"
+
+# # Ayu Dark (colors from the ayu palette)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#e6b450"
+#       - bold
+#     inactiveBorderColor:
+#       - "#565b66"
+#     searchingActiveBorderColor:
+#       - "#59c2ff"
+#       - bold
+#     optionsTextColor:
+#       - "#59c2ff"
+#     selectedLineBgColor:
+#       - "#1b395a"
+#     inactiveViewSelectedLineBgColor:
+#       - bold
+#     cherryPickedCommitFgColor:
+#       - "#0b0e14"
+#     cherryPickedCommitBgColor:
+#       - "#95e6cb"
+#     markedBaseCommitFgColor:
+#       - "#0b0e14"
+#     markedBaseCommitBgColor:
+#       - "#ffb454"
+#     unstagedChangesColor:
+#       - "#f07178"
+#     defaultFgColor:
+#       - "#bfbdb6"
+
+# # Dracula theme from dracula/lazygit (MIT)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#FF79C6"
+#       - bold
+#     inactiveBorderColor:
+#       - "#BD93F9"
+#
+#     searchingActiveBorderColor:
+#       - "#8BE9FD"
+#       - bold
+#
+#     optionsTextColor:
+#       - "#6272A4"
+#
+#     selectedLineBgColor:
+#       - "#6272A4"
+#
+#     inactiveViewSelectedLineBgColor:
+#       - bold
+#
+#     cherryPickedCommitFgColor:
+#       - "#6272A4"
+#
+#     cherryPickedCommitBgColor:
+#       - "#8BE9FD"
+#
+#     markedBaseCommitFgColor:
+#       - "#8BE9FD"
+#
+#     markedBaseCommitBgColor:
+#       - "#F1FA8C"
+#
+#     unstagedChangesColor:
+#       - "#FF5555"
+#
+#     defaultFgColor:
+#       - "#F8F8F2"
