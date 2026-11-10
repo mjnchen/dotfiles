@@ -55,9 +55,9 @@ copy-on-select = clipboard
 window-save-state = always
 # theme = Catppuccin Macchiato
 # theme = Catppuccin Mocha
-# theme = Dracula
+theme = Dracula
 # theme = Kanagawa Dragon
-theme = Kanagawa Wave
+# theme = Kanagawa Wave
 # theme = Rose Pine
 # theme = Rose Pine Moon
 
