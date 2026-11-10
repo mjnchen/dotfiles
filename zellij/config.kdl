@@ -5,15 +5,10 @@ simplified_ui true
 on_force_close "detach"
 // theme "catppuccin-mocha"
 // theme "kanagawa-dragon"
-// theme "kanagawa-wave"
-theme "rose-pine"
+theme "kanagawa-wave"
+// theme "rose-pine"
 // theme "rose-pine-moon"
-// theme "tokyonight-night"
-// theme "tokyo-night-storm"
-// theme "tokyonight-moon"
 // theme "dracula"
-// theme "ayu-dark"
-// theme "gruvbox-dark"
 pane_frames false
 show_startup_tips false
 show_release_notes false
@@ -77,33 +72,5 @@ themes {
         cyan "#ea9a97"
         white "#e0def4"
         orange "#ea9a97"
-    }
-    // TokyoNight Moon (folke/tokyonight.nvim extras/zellij)
-    tokyonight-moon {
-        fg "#c8d3f5"
-        bg "#2f334d"
-        black "#222436"
-        red "#ff757f"
-        green "#c3e88d"
-        yellow "#ffc777"
-        blue "#82aaff"
-        magenta "#c099ff"
-        cyan "#86e1fc"
-        white "#828bb8"
-        orange "#ff966c"
-    }
-    // TokyoNight Night (folke/tokyonight.nvim extras/zellij)
-    tokyonight-night {
-        fg "#c0caf5"
-        bg "#292e42"
-        black "#1a1b26"
-        red "#f7768e"
-        green "#9ece6a"
-        yellow "#e0af68"
-        blue "#7aa2f7"
-        magenta "#bb9af7"
-        cyan "#7dcfff"
-        white "#a9b1d6"
-        orange "#ff9e64"
     }
 }

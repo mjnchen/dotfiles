@@ -40,9 +40,6 @@ ln -sfn "$DOTFILES/zellij/layouts" ~/.config/zellij/layouts
 echo "==> Symlinks: btop"
 mkdir -p ~/.config/btop
 ln -sf "$DOTFILES/btop/btop.conf" ~/.config/btop/btop.conf
-# TokyoNight Moon theme from folke/tokyonight.nvim extras/btop (Apache-2.0); not a btop built-in
-mkdir -p ~/.config/btop/themes
-ln -sf "$DOTFILES/btop/themes/tokyonight_moon.theme" ~/.config/btop/themes/tokyonight_moon.theme
 
 echo "==> Symlinks: lazygit"
 mkdir -p "$HOME/Library/Application Support/lazygit"
@@ -94,16 +91,8 @@ ln -sf "$DOTFILES/sublime/Kanagawa Wave.tmTheme" "$SUBLIME_DIR/Packages/User/Kan
 # Rose Pine and Rose Pine Moon schemes from rose-pine/sublime-text (MIT)
 ln -sf "$DOTFILES/sublime/Rosé Pine.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine.sublime-color-scheme"
 ln -sf "$DOTFILES/sublime/Rosé Pine Moon.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine Moon.sublime-color-scheme"
-# TokyoNight Night scheme from folke/tokyonight.nvim extras/sublime (Apache-2.0)
-ln -sf "$DOTFILES/sublime/tokyonight_night.tmTheme" "$SUBLIME_DIR/Packages/User/tokyonight_night.tmTheme"
-ln -sf "$DOTFILES/sublime/tokyonight_storm.tmTheme" "$SUBLIME_DIR/Packages/User/tokyonight_storm.tmTheme"
-ln -sf "$DOTFILES/sublime/tokyonight_moon.tmTheme" "$SUBLIME_DIR/Packages/User/tokyonight_moon.tmTheme"
 # Dracula scheme from dracula/sublime (MIT)
 ln -sf "$DOTFILES/sublime/Dracula.tmTheme" "$SUBLIME_DIR/Packages/User/Dracula.tmTheme"
-# Gruvbox Dark (Medium) scheme from Briles/gruvbox (MIT)
-ln -sf "$DOTFILES/sublime/gruvbox (Dark) (Medium).sublime-color-scheme" "$SUBLIME_DIR/Packages/User/gruvbox (Dark) (Medium).sublime-color-scheme"
-# Ayu Dark scheme from dempfi/ayu (MIT)
-ln -sf "$DOTFILES/sublime/ayu-dark.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/ayu-dark.sublime-color-scheme"
 # Package Control installs anything listed in installed_packages (e.g. Catppuccin) on next launch
 ln -sf "$DOTFILES/sublime/Package Control.sublime-settings" "$SUBLIME_DIR/Packages/User/Package Control.sublime-settings"
 if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]]; then

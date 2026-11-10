@@ -3,8 +3,9 @@ anysphere.cursorpyright
 anysphere.remote-ssh
 catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
-enkia.tokyo-night
+dracula-theme.theme-dracula
 metaphore.kanagawa-vscode-color-theme
+miguelsolorio.symbols
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-python.autopep8
