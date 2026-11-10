@@ -11,7 +11,7 @@
     // "workbench.colorTheme": "Gruvbox Dark Medium",
     // "workbench.colorTheme": "Ayu Dark",
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Mocha",
-    "workbench.preferredHighContrastColorTheme": "Tokyo Night Storm",
+    "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "catppuccin-mocha",
     "claudeCode.preferredLocation": "sidebar",
     "redhat.telemetry.enabled": true,
