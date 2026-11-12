@@ -1,0 +1,57 @@
+{
+    // Everforest Dark, medium contrast (palette from sainnhe/everforest, MIT); syntax mapping follows its vim port
+    "name": "Everforest Dark",
+    "author": "dotfiles",
+    "variables": {
+        "bg0": "#2d353b",
+        "bg1": "#343f44",
+        "bg2": "#3d484d",
+        "bg3": "#475258",
+        "bg_visual": "#543a48",
+        "fg": "#d3c6aa",
+        "grey1": "#859289",
+        "red": "#e67e80",
+        "orange": "#e69875",
+        "yellow": "#dbbc7f",
+        "green": "#a7c080",
+        "aqua": "#83c092",
+        "blue": "#7fbbb3",
+        "purple": "#d699b6"
+    },
+    "globals": {
+        "background": "var(bg0)",
+        "foreground": "var(fg)",
+        "caret": "var(fg)",
+        "line_highlight": "var(bg1)",
+        "selection": "var(bg_visual)",
+        "selection_border": "var(bg_visual)",
+        "gutter_foreground": "var(grey1)",
+        "find_highlight": "var(yellow)",
+        "find_highlight_foreground": "var(bg0)",
+        "brackets_foreground": "var(aqua)",
+        "bracket_contents_foreground": "var(aqua)",
+        "invisibles": "var(bg3)",
+        "guide": "var(bg2)",
+        "active_guide": "var(bg3)"
+    },
+    "rules": [
+        { "name": "Comment", "scope": "comment, punctuation.definition.comment", "foreground": "var(grey1)", "font_style": "italic" },
+        { "name": "String", "scope": "string", "foreground": "var(aqua)" },
+        { "name": "Number, Boolean, Constant", "scope": "constant, constant.character.escape", "foreground": "var(purple)" },
+        { "name": "Keyword", "scope": "keyword, keyword.operator.word", "foreground": "var(red)" },
+        { "name": "Operator", "scope": "keyword.operator, storage.modifier", "foreground": "var(orange)" },
+        { "name": "Function", "scope": "variable.function, entity.name.function, support.function", "foreground": "var(green)" },
+        { "name": "Type", "scope": "storage.type, entity.name.type, entity.name.class, support.type, support.class", "foreground": "var(yellow)" },
+        { "name": "Include", "scope": "meta.preprocessor, keyword.control.import, keyword.other.import", "foreground": "var(purple)" },
+        { "name": "Tag", "scope": "entity.name.tag", "foreground": "var(orange)" },
+        { "name": "Attribute", "scope": "entity.other.attribute-name", "foreground": "var(yellow)" },
+        { "name": "Special", "scope": "variable.language, support.constant, constant.other.placeholder, string.regexp", "foreground": "var(blue)" },
+        { "name": "Heading", "scope": "markup.heading, entity.name.section", "foreground": "var(orange)", "font_style": "bold" },
+        { "name": "Link", "scope": "markup.underline.link", "foreground": "var(blue)" },
+        { "name": "Inserted", "scope": "markup.inserted", "foreground": "var(green)" },
+        { "name": "Deleted", "scope": "markup.deleted", "foreground": "var(red)" },
+        { "name": "Changed", "scope": "markup.changed", "foreground": "var(blue)" },
+        { "name": "Todo", "scope": "comment.line.todo, keyword.todo", "foreground": "var(purple)", "font_style": "bold" },
+        { "name": "Error", "scope": "invalid", "foreground": "var(red)", "font_style": "bold" }
+    ]
+}
