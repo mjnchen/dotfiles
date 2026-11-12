@@ -28,8 +28,6 @@ palette = 'kanagawa_dragon'
 # palette = 'kanagawa_wave'
 # palette = 'rose_pine'
 # palette = 'rose_pine_moon'
-# palette = 'dracula'
-# palette = 'ayu_mirage'
 # palette = 'tokyonight_storm'
 # palette = 'everforest_dark'
 
@@ -207,24 +205,6 @@ green = "#3e8fb0"
 sapphire = "#9ccfd8"
 lavender = "#c4a7e7"
 crust = "#232136"
-
-[palettes.dracula]
-red = "#ff5555"
-peach = "#ffb86c"
-yellow = "#f1fa8c"
-green = "#50fa7b"
-sapphire = "#8be9fd"
-lavender = "#bd93f9"
-crust = "#21222c"
-
-[palettes.ayu_mirage]
-red = "#f28779"
-peach = "#ffa659"
-yellow = "#ffcc66"
-green = "#d5ff80"
-sapphire = "#73d0ff"
-lavender = "#dfbfff"
-crust = "#1a1f29"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

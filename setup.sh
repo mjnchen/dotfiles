@@ -91,10 +91,6 @@ ln -sf "$DOTFILES/sublime/Kanagawa Wave.tmTheme" "$SUBLIME_DIR/Packages/User/Kan
 # Rose Pine and Rose Pine Moon schemes from rose-pine/sublime-text (MIT)
 ln -sf "$DOTFILES/sublime/Rosé Pine.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine.sublime-color-scheme"
 ln -sf "$DOTFILES/sublime/Rosé Pine Moon.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Rosé Pine Moon.sublime-color-scheme"
-# Dracula scheme from dracula/sublime (MIT)
-ln -sf "$DOTFILES/sublime/Dracula.tmTheme" "$SUBLIME_DIR/Packages/User/Dracula.tmTheme"
-# Ayu Mirage scheme from dempfi/ayu (MIT)
-ln -sf "$DOTFILES/sublime/ayu-mirage.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/ayu-mirage.sublime-color-scheme"
 # TokyoNight Storm scheme from folke/tokyonight.nvim extras/sublime (Apache-2.0)
 ln -sf "$DOTFILES/sublime/tokyonight_storm.tmTheme" "$SUBLIME_DIR/Packages/User/tokyonight_storm.tmTheme"
 # Everforest Dark scheme built from the sainnhe/everforest palette (MIT)

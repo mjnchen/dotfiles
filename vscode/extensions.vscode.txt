@@ -1,7 +1,6 @@
 anthropic.claude-code
 catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
-dracula-theme.theme-dracula
 enkia.tokyo-night
 metaphore.kanagawa-vscode-color-theme
 miguelsolorio.symbols
@@ -14,4 +13,3 @@ ms-python.python
 ms-vscode.makefile-tools
 mvllow.rose-pine
 sainnhe.everforest
-teabyii.ayu

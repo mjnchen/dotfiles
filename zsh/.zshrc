@@ -42,13 +42,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
 # bat has no Kanagawa theme; "ansi" uses the terminal's palette (Ghostty: Kanagawa)
 export BAT_THEME="ansi"
-# Dracula (bat built-in; delta also reads BAT_THEME)
-# export BAT_THEME="Dracula"
 # Catppuccin Mocha (bat built-in)
 # export BAT_THEME="Catppuccin Mocha"
 # Rose Pine: bat has no Rose Pine theme; "ansi" uses Ghostty's palette
-# export BAT_THEME="ansi"
-# Ayu Mirage: bat has no Ayu theme; "ansi" uses Ghostty's palette
 # export BAT_THEME="ansi"
 # TokyoNight Storm: bat has no TokyoNight theme; "ansi" uses Ghostty's palette
 # export BAT_THEME="ansi"
@@ -64,10 +60,6 @@ export FZF_DEFAULT_OPTS="--color=bg+:#282727,bg:#181616,spinner:#8ea4a2,hl:#c474
 # export FZF_DEFAULT_OPTS="--color=fg:#908caa,bg:#191724,hl:#ebbcba,fg+:#e0def4,bg+:#26233a,hl+:#ebbcba,border:#403d52,header:#31748f,gutter:#191724,spinner:#f6c177,info:#9ccfd8,pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
 # Rose Pine Moon (rose-pine/fzf)
 # export FZF_DEFAULT_OPTS="--color=fg:#908caa,bg:#232136,hl:#ea9a97,fg+:#e0def4,bg+:#393552,hl+:#ea9a97,border:#44415a,header:#3e8fb0,gutter:#232136,spinner:#f6c177,info:#9ccfd8,pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
-# Dracula (dracula/fzf)
-# export FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9,fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9,info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6,marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
-# Ayu Mirage (colors from the ayu palette)
-# export FZF_DEFAULT_OPTS="--color=fg:#cccac2,bg:#1f2430,hl:#ffcc66,fg+:#cccac2,bg+:#2d3b4d,hl+:#ffcc66,info:#73d0ff,prompt:#ffa659,pointer:#f29e74,marker:#d5ff80,spinner:#95e6cb,header:#707a8c"
 # TokyoNight Storm (colors from folke/tokyonight.nvim extras/fzf)
 # export FZF_DEFAULT_OPTS="--color=bg+:#2e3c64,bg:#1f2335,border:#29a4bd,fg:#c0caf5,gutter:#1f2335,header:#ff9e64,hl+:#2ac3de,hl:#2ac3de,info:#545c7e,marker:#ff007c,pointer:#ff007c,prompt:#2ac3de,query:#c0caf5:regular,scrollbar:#29a4bd,separator:#ff9e64,spinner:#ff007c"
 # Everforest Dark (colors from the sainnhe/everforest palette)
