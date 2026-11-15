@@ -86,11 +86,20 @@
     "ralph-loop@claude-plugins-official": true,
     "huggingface-skills@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true
+    "skill-creator@claude-plugins-official": true,
+    "catppuccin-mocha@dotfiles": true
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "tui": "fullscreen",
   "skipWorkflowUsageWarning": true,
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "extraKnownMarketplaces": {
+    "dotfiles": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/mchen/Projects/personal/dotfiles/claude/mods"
+      }
+    }
+  }
 }

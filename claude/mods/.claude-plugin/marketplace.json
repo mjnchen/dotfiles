@@ -1,0 +1,12 @@
+{
+  "name": "dotfiles",
+  "owner": {
+    "name": "Martin Chen"
+  },
+  "plugins": [
+    {
+      "name": "catppuccin-mocha",
+      "source": "./catppuccin-mocha"
+    }
+  ]
+}
