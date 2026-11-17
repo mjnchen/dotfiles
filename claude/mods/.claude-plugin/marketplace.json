@@ -7,6 +7,10 @@
     {
       "name": "catppuccin-mocha",
       "source": "./catppuccin-mocha"
+    },
+    {
+      "name": "dracula",
+      "source": "./dracula"
     }
   ]
 }

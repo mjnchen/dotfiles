@@ -87,7 +87,8 @@
     "huggingface-skills@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
-    "catppuccin-mocha@dotfiles": true
+    "catppuccin-mocha@dotfiles": false,
+    "dracula@dotfiles": true
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
