@@ -14,7 +14,7 @@
     "workbench.colorTheme": "Kanagawa Dragon",
     // "workbench.colorTheme": "Everforest Dark",
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Frappé",
-    "workbench.preferredHighContrastColorTheme": "Dracula Theme",
+    "workbench.preferredHighContrastColorTheme": "Kanagawa Dragon",
     "editor.fontLigatures": false,
     "workbench.iconTheme": "symbols",
     "claudeCode.preferredLocation": "panel",
