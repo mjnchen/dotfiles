@@ -1,0 +1,57 @@
+{
+    // Gruvbox Dark, medium contrast (palette from morhetz/gruvbox, MIT); bright accents on bg0 #282828
+    "name": "Gruvbox Dark",
+    "author": "dotfiles",
+    "variables": {
+        "bg0": "#282828",
+        "bg1": "#3c3836",
+        "bg2": "#504945",
+        "bg3": "#665c54",
+        "bg_visual": "#504945",
+        "fg": "#ebdbb2",
+        "grey1": "#928374",
+        "red": "#fb4934",
+        "orange": "#fe8019",
+        "yellow": "#fabd2f",
+        "green": "#b8bb26",
+        "aqua": "#8ec07c",
+        "blue": "#83a598",
+        "purple": "#d3869b"
+    },
+    "globals": {
+        "background": "var(bg0)",
+        "foreground": "var(fg)",
+        "caret": "var(fg)",
+        "line_highlight": "var(bg1)",
+        "selection": "var(bg_visual)",
+        "selection_border": "var(bg_visual)",
+        "gutter_foreground": "var(grey1)",
+        "find_highlight": "var(yellow)",
+        "find_highlight_foreground": "var(bg0)",
+        "brackets_foreground": "var(aqua)",
+        "bracket_contents_foreground": "var(aqua)",
+        "invisibles": "var(bg3)",
+        "guide": "var(bg2)",
+        "active_guide": "var(bg3)"
+    },
+    "rules": [
+        { "name": "Comment", "scope": "comment, punctuation.definition.comment", "foreground": "var(grey1)", "font_style": "italic" },
+        { "name": "String", "scope": "string", "foreground": "var(green)" },
+        { "name": "Number, Boolean, Constant", "scope": "constant, constant.character.escape", "foreground": "var(purple)" },
+        { "name": "Keyword", "scope": "keyword, keyword.operator.word", "foreground": "var(red)" },
+        { "name": "Operator", "scope": "keyword.operator, storage.modifier", "foreground": "var(orange)" },
+        { "name": "Function", "scope": "variable.function, entity.name.function, support.function", "foreground": "var(green)" },
+        { "name": "Type", "scope": "storage.type, entity.name.type, entity.name.class, support.type, support.class", "foreground": "var(yellow)" },
+        { "name": "Include", "scope": "meta.preprocessor, keyword.control.import, keyword.other.import", "foreground": "var(aqua)" },
+        { "name": "Tag", "scope": "entity.name.tag", "foreground": "var(red)" },
+        { "name": "Attribute", "scope": "entity.other.attribute-name", "foreground": "var(yellow)" },
+        { "name": "Special", "scope": "variable.language, support.constant, constant.other.placeholder, string.regexp", "foreground": "var(blue)" },
+        { "name": "Heading", "scope": "markup.heading, entity.name.section", "foreground": "var(green)", "font_style": "bold" },
+        { "name": "Link", "scope": "markup.underline.link", "foreground": "var(blue)" },
+        { "name": "Inserted", "scope": "markup.inserted", "foreground": "var(green)" },
+        { "name": "Deleted", "scope": "markup.deleted", "foreground": "var(red)" },
+        { "name": "Changed", "scope": "markup.changed", "foreground": "var(blue)" },
+        { "name": "Todo", "scope": "comment.line.todo, keyword.todo", "foreground": "var(purple)", "font_style": "bold" },
+        { "name": "Error", "scope": "invalid", "foreground": "var(red)", "font_style": "bold" }
+    ]
+}

@@ -11,6 +11,10 @@
     {
       "name": "dracula",
       "source": "./dracula"
+    },
+    {
+      "name": "kanagawa-dragon",
+      "source": "./kanagawa-dragon"
     }
   ]
 }

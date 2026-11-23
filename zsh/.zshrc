@@ -35,17 +35,22 @@ setopt INTERACTIVE_COMMENTS
 # Cursor
 export PATH="$HOME/.local/bin:$PATH"
 
+# Node 22 (atlas build-console requires it; Homebrew's default node is newer)
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+
 # ==============================================================================
 #                                     FZF
 # ==============================================================================
 
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
 # bat has no Kanagawa theme; "ansi" uses the terminal's palette (Ghostty: Kanagawa)
-# export BAT_THEME="ansi"
+export BAT_THEME="ansi"
 # Catppuccin Mocha (bat built-in)
 # export BAT_THEME="Catppuccin Mocha"
 # Dracula (bat built-in; delta also reads BAT_THEME)
-export BAT_THEME="Dracula"
+# export BAT_THEME="Dracula"
+# Gruvbox Dark (bat built-in; delta also reads BAT_THEME)
+# export BAT_THEME="gruvbox-dark"
 # Rose Pine: bat has no Rose Pine theme; "ansi" uses Ghostty's palette
 # export BAT_THEME="ansi"
 # TokyoNight Storm: bat has no TokyoNight theme; "ansi" uses Ghostty's palette
@@ -53,11 +58,13 @@ export BAT_THEME="Dracula"
 # Everforest: bat has no Everforest theme; "ansi" uses Ghostty's palette
 # export BAT_THEME="ansi"
 # Dracula (dracula/fzf)
-export FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9,fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9,info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6,marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+# export FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9,fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9,info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6,marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+# Gruvbox Dark (colors from the morhetz/gruvbox palette)
+# export FZF_DEFAULT_OPTS="--color=fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fe8019,info:#83a598,prompt:#b8bb26,pointer:#fb4934,marker:#fb4934,spinner:#fe8019,header:#928374,border:#504945,gutter:#282828"
 # Catppuccin Mocha
 # export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
 # Kanagawa Dragon
-# export FZF_DEFAULT_OPTS="--color=bg+:#282727,bg:#181616,spinner:#8ea4a2,hl:#c4746e,fg:#c5c9c5,header:#c4746e,info:#8992a7,pointer:#c8c093,marker:#8ea4a2,fg+:#c5c9c5,prompt:#8992a7,hl+:#e46876,border:#625e5a"
+export FZF_DEFAULT_OPTS="--color=bg+:#282727,bg:#181616,spinner:#8ea4a2,hl:#c4746e,fg:#c5c9c5,header:#c4746e,info:#8992a7,pointer:#c8c093,marker:#8ea4a2,fg+:#c5c9c5,prompt:#8992a7,hl+:#e46876,border:#625e5a"
 # Kanagawa Wave
 # export FZF_DEFAULT_OPTS="--color=bg+:#2a2a37,bg:#1f1f28,spinner:#7aa89f,hl:#e46876,fg:#dcd7ba,header:#e46876,info:#957fb8,pointer:#c8c093,marker:#7aa89f,fg+:#dcd7ba,prompt:#957fb8,hl+:#ff5d62,border:#54546d"
 # Rose Pine (rose-pine/fzf)
