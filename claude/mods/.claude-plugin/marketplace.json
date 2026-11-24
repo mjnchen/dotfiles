@@ -15,6 +15,10 @@
     {
       "name": "kanagawa-dragon",
       "source": "./kanagawa-dragon"
+    },
+    {
+      "name": "everforest-dark",
+      "source": "./everforest-dark"
     }
   ]
 }

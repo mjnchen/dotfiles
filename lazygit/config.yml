@@ -29,36 +29,36 @@
 #     defaultFgColor:
 #       - "#dcd7ba"
 
-# Kanagawa Dragon (colors from rebelot/kanagawa.nvim)
-gui:
-  theme:
-    activeBorderColor:
-      - "#8ba4b0"
-      - bold
-    inactiveBorderColor:
-      - "#625e5a"
-    searchingActiveBorderColor:
-      - "#c4b28a"
-      - bold
-    optionsTextColor:
-      - "#8ea4a2"
-    selectedLineBgColor:
-      - "#393836"
-    inactiveViewSelectedLineBgColor:
-      - "#282727"
-      - bold
-    cherryPickedCommitFgColor:
-      - "#181616"
-    cherryPickedCommitBgColor:
-      - "#8ea4a2"
-    markedBaseCommitFgColor:
-      - "#181616"
-    markedBaseCommitBgColor:
-      - "#c4b28a"
-    unstagedChangesColor:
-      - "#c4746e"
-    defaultFgColor:
-      - "#c5c9c5"
+# # Kanagawa Dragon (colors from rebelot/kanagawa.nvim)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#8ba4b0"
+#       - bold
+#     inactiveBorderColor:
+#       - "#625e5a"
+#     searchingActiveBorderColor:
+#       - "#c4b28a"
+#       - bold
+#     optionsTextColor:
+#       - "#8ea4a2"
+#     selectedLineBgColor:
+#       - "#393836"
+#     inactiveViewSelectedLineBgColor:
+#       - "#282727"
+#       - bold
+#     cherryPickedCommitFgColor:
+#       - "#181616"
+#     cherryPickedCommitBgColor:
+#       - "#8ea4a2"
+#     markedBaseCommitFgColor:
+#       - "#181616"
+#     markedBaseCommitBgColor:
+#       - "#c4b28a"
+#     unstagedChangesColor:
+#       - "#c4746e"
+#     defaultFgColor:
+#       - "#c5c9c5"
 
 # # Rose Pine (rose-pine/lazygit, MIT)
 # gui:
@@ -210,30 +210,30 @@ gui:
 #     defaultFgColor:
 #       - "#c0caf5"
 
-# # Everforest Dark (colors from the sainnhe/everforest palette)
-# gui:
-#   theme:
-#     activeBorderColor:
-#       - "#a7c080"
-#       - bold
-#     inactiveBorderColor:
-#       - "#859289"
-#     searchingActiveBorderColor:
-#       - "#dbbc7f"
-#       - bold
-#     optionsTextColor:
-#       - "#7fbbb3"
-#     selectedLineBgColor:
-#       - "#3d484d"
-#     cherryPickedCommitFgColor:
-#       - "#2d353b"
-#     cherryPickedCommitBgColor:
-#       - "#83c092"
-#     markedBaseCommitFgColor:
-#       - "#2d353b"
-#     markedBaseCommitBgColor:
-#       - "#dbbc7f"
-#     unstagedChangesColor:
-#       - "#e67e80"
-#     defaultFgColor:
-#       - "#d3c6aa"
+# Everforest Dark (colors from the sainnhe/everforest palette)
+gui:
+  theme:
+    activeBorderColor:
+      - "#a7c080"
+      - bold
+    inactiveBorderColor:
+      - "#859289"
+    searchingActiveBorderColor:
+      - "#dbbc7f"
+      - bold
+    optionsTextColor:
+      - "#7fbbb3"
+    selectedLineBgColor:
+      - "#3d484d"
+    cherryPickedCommitFgColor:
+      - "#2d353b"
+    cherryPickedCommitBgColor:
+      - "#83c092"
+    markedBaseCommitFgColor:
+      - "#2d353b"
+    markedBaseCommitBgColor:
+      - "#dbbc7f"
+    unstagedChangesColor:
+      - "#e67e80"
+    defaultFgColor:
+      - "#d3c6aa"

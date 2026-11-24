@@ -89,7 +89,8 @@
     "skill-creator@claude-plugins-official": true,
     "catppuccin-mocha@dotfiles": false,
     "dracula@dotfiles": false,
-    "kanagawa-dragon@dotfiles": true
+    "kanagawa-dragon@dotfiles": false,
+    "everforest-dark@dotfiles": true
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",

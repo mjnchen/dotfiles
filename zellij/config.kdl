@@ -5,12 +5,12 @@ simplified_ui true
 on_force_close "detach"
 // theme "catppuccin-mocha"
 // theme "dracula"
-theme "kanagawa-dragon"
+// theme "kanagawa-dragon"
 // theme "kanagawa-wave"
 // theme "rose-pine"
 // theme "rose-pine-moon"
 // theme "tokyo-night-storm"
-// theme "everforest-dark"
+theme "everforest-dark"
 pane_frames false
 show_startup_tips false
 show_release_notes false
@@ -20,6 +20,20 @@ default_layout "compact"
 
 // Kanagawa Dragon (rebelot/kanagawa.nvim); not a Zellij built-in
 themes {
+    // Everforest Dark Medium (sainnhe/everforest); not a Zellij built-in
+    everforest-dark {
+        fg "#d3c6aa"
+        bg "#2d353b"
+        black "#232a2e"
+        red "#e67e80"
+        green "#a7c080"
+        yellow "#dbbc7f"
+        blue "#7fbbb3"
+        magenta "#d699b6"
+        cyan "#83c092"
+        white "#d3c6aa"
+        orange "#e69875"
+    }
     kanagawa-dragon {
         fg "#c5c9c5"
         bg "#282727"

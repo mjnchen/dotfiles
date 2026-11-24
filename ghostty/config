@@ -57,12 +57,12 @@ window-save-state = always
 # theme = Catppuccin Mocha
 # theme = Dracula
 # theme = Gruvbox Dark
-theme = Kanagawa Dragon
+# theme = Kanagawa Dragon
 # theme = Kanagawa Wave
 # theme = Rose Pine
 # theme = Rose Pine Moon
 # theme = TokyoNight Storm
-# theme = Everforest Dark Med
+theme = Everforest Dark Med
 
 shell-integration = zsh
 shell-integration-features = no-title
