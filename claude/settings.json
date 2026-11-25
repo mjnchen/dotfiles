@@ -90,7 +90,8 @@
     "catppuccin-mocha@dotfiles": false,
     "dracula@dotfiles": false,
     "kanagawa-dragon@dotfiles": false,
-    "everforest-dark@dotfiles": true
+    "everforest-dark@dotfiles": false,
+    "gruvbox-dark@dotfiles": true
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",

@@ -210,30 +210,58 @@
 #     defaultFgColor:
 #       - "#c0caf5"
 
-# Everforest Dark (colors from the sainnhe/everforest palette)
+# Gruvbox Dark (colors from the morhetz/gruvbox palette)
 gui:
   theme:
     activeBorderColor:
-      - "#a7c080"
+      - "#fabd2f"
       - bold
     inactiveBorderColor:
-      - "#859289"
+      - "#665c54"
     searchingActiveBorderColor:
-      - "#dbbc7f"
+      - "#fe8019"
       - bold
     optionsTextColor:
-      - "#7fbbb3"
+      - "#83a598"
     selectedLineBgColor:
-      - "#3d484d"
+      - "#3c3836"
     cherryPickedCommitFgColor:
-      - "#2d353b"
+      - "#282828"
     cherryPickedCommitBgColor:
-      - "#83c092"
+      - "#8ec07c"
     markedBaseCommitFgColor:
-      - "#2d353b"
+      - "#282828"
     markedBaseCommitBgColor:
-      - "#dbbc7f"
+      - "#fabd2f"
     unstagedChangesColor:
-      - "#e67e80"
+      - "#fb4934"
     defaultFgColor:
-      - "#d3c6aa"
+      - "#ebdbb2"
+
+# # Everforest Dark (colors from the sainnhe/everforest palette)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#a7c080"
+#       - bold
+#     inactiveBorderColor:
+#       - "#859289"
+#     searchingActiveBorderColor:
+#       - "#dbbc7f"
+#       - bold
+#     optionsTextColor:
+#       - "#7fbbb3"
+#     selectedLineBgColor:
+#       - "#3d484d"
+#     cherryPickedCommitFgColor:
+#       - "#2d353b"
+#     cherryPickedCommitBgColor:
+#       - "#83c092"
+#     markedBaseCommitFgColor:
+#       - "#2d353b"
+#     markedBaseCommitBgColor:
+#       - "#dbbc7f"
+#     unstagedChangesColor:
+#       - "#e67e80"
+#     defaultFgColor:
+#       - "#d3c6aa"

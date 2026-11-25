@@ -19,6 +19,10 @@
     {
       "name": "everforest-dark",
       "source": "./everforest-dark"
+    },
+    {
+      "name": "gruvbox-dark",
+      "source": "./gruvbox-dark"
     }
   ]
 }

@@ -1,19 +1,15 @@
 {
     // "workbench.colorTheme": "Catppuccin Mocha",
     // "workbench.colorTheme": "Dracula Theme",
-    // "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
     // "workbench.colorTheme": "Kanagawa Dragon",
     // "workbench.colorTheme": "Kanagawa Wave",
     // "workbench.colorTheme": "Rosé Pine",
     // "workbench.colorTheme": "Rosé Pine Moon",
     // "workbench.colorTheme": "Kanagawa Dragon",
-    "workbench.colorTheme": "Everforest Dark",
+    // "workbench.colorTheme": "Everforest Dark",
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Mocha",
-    "workbench.preferredHighContrastColorTheme": "Everforest Dark",
-    // Everforest reads muted at default "medium"; hard bg + high contrast makes
-    // syntax pop to match the terminal / Claude-app look
-    "everforest.darkContrast": "hard",
-    "everforest.highContrast": true,
+    "workbench.preferredHighContrastColorTheme": "Gruvbox Dark Medium",
     "claudeCode.preferredLocation": "sidebar",
     "redhat.telemetry.enabled": true,
     "makefile.configureOnOpen": true,

@@ -10,7 +10,8 @@ on_force_close "detach"
 // theme "rose-pine"
 // theme "rose-pine-moon"
 // theme "tokyo-night-storm"
-theme "everforest-dark"
+// theme "everforest-dark"
+theme "gruvbox-dark"
 pane_frames false
 show_startup_tips false
 show_release_notes false
