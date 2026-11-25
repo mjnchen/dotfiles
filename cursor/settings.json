@@ -17,7 +17,7 @@
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Frappé",
     "workbench.preferredHighContrastColorTheme": "Everforest Dark",
     "editor.fontLigatures": false,
-    "workbench.iconTheme": "symbols",
+    "workbench.iconTheme": "vs-seti",
     "claudeCode.preferredLocation": "panel",
     "files.autoSave": "afterDelay",
     "terminal.external.osxExec": "Ghostty.app",

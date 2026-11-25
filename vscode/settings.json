@@ -15,5 +15,6 @@
     "redhat.telemetry.enabled": true,
     "makefile.configureOnOpen": true,
     "go.toolsManagement.autoUpdate": true,
-    "claudeCode.hideOnboarding": true
+    "claudeCode.hideOnboarding": true,
+    "workbench.iconTheme": "vs-seti"
 }
