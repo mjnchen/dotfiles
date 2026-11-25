@@ -10,6 +10,10 @@
     "workbench.colorTheme": "Everforest Dark",
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Mocha",
     "workbench.preferredHighContrastColorTheme": "Everforest Dark",
+    // Everforest reads muted at default "medium"; hard bg + high contrast makes
+    // syntax pop to match the terminal / Claude-app look
+    "everforest.darkContrast": "hard",
+    "everforest.highContrast": true,
     "claudeCode.preferredLocation": "sidebar",
     "redhat.telemetry.enabled": true,
     "makefile.configureOnOpen": true,
