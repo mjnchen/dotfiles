@@ -23,6 +23,10 @@
     {
       "name": "gruvbox-dark",
       "source": "./gruvbox-dark"
+    },
+    {
+      "name": "tokyo-night-storm",
+      "source": "./tokyo-night-storm"
     }
   ]
 }

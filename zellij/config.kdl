@@ -9,9 +9,9 @@ on_force_close "detach"
 // theme "kanagawa-wave"
 // theme "rose-pine"
 // theme "rose-pine-moon"
-// theme "tokyo-night-storm"
+theme "tokyo-night-storm"
 // theme "everforest-dark"
-theme "gruvbox-dark"
+// theme "gruvbox-dark"
 pane_frames false
 show_startup_tips false
 show_release_notes false
@@ -21,6 +21,20 @@ default_layout "compact"
 
 // Kanagawa Dragon (rebelot/kanagawa.nvim); not a Zellij built-in
 themes {
+    // TokyoNight Storm (folke/tokyonight.nvim); not a Zellij built-in
+    tokyo-night-storm {
+        fg "#c0caf5"
+        bg "#24283b"
+        black "#1d202f"
+        red "#f7768e"
+        green "#9ece6a"
+        yellow "#e0af68"
+        blue "#7aa2f7"
+        magenta "#bb9af7"
+        cyan "#7dcfff"
+        white "#c0caf5"
+        orange "#ff9e64"
+    }
     // Everforest Dark Medium (sainnhe/everforest); not a Zellij built-in
     everforest-dark {
         fg "#d3c6aa"

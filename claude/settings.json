@@ -91,7 +91,8 @@
     "dracula@dotfiles": false,
     "kanagawa-dragon@dotfiles": false,
     "everforest-dark@dotfiles": false,
-    "gruvbox-dark@dotfiles": true
+    "gruvbox-dark@dotfiles": false,
+    "tokyo-night-storm@dotfiles": true
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",

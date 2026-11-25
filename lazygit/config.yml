@@ -182,61 +182,61 @@
 #     defaultFgColor:
 #       - "#cdd6f4"
 
-# # TokyoNight Storm (folke/tokyonight.nvim extras/lazygit, Apache-2.0)
-# gui:
-#   theme:
-#     activeBorderColor:
-#       - "#ff9e64"
-#       - bold
-#     inactiveBorderColor:
-#       - "#29a4bd"
-#     searchingActiveBorderColor:
-#       - "#ff9e64"
-#       - bold
-#     optionsTextColor:
-#       - "#7aa2f7"
-#     selectedLineBgColor:
-#       - "#2e3c64"
-#     cherryPickedCommitFgColor:
-#       - "#7aa2f7"
-#     cherryPickedCommitBgColor:
-#       - "#bb9af7"
-#     markedBaseCommitFgColor:
-#       - "#7aa2f7"
-#     markedBaseCommitBgColor:
-#       - "#e0af68"
-#     unstagedChangesColor:
-#       - "#db4b4b"
-#     defaultFgColor:
-#       - "#c0caf5"
-
-# Gruvbox Dark (colors from the morhetz/gruvbox palette)
+# TokyoNight Storm (folke/tokyonight.nvim extras/lazygit, Apache-2.0)
 gui:
   theme:
     activeBorderColor:
-      - "#fabd2f"
+      - "#ff9e64"
       - bold
     inactiveBorderColor:
-      - "#665c54"
+      - "#29a4bd"
     searchingActiveBorderColor:
-      - "#fe8019"
+      - "#ff9e64"
       - bold
     optionsTextColor:
-      - "#83a598"
+      - "#7aa2f7"
     selectedLineBgColor:
-      - "#3c3836"
+      - "#2e3c64"
     cherryPickedCommitFgColor:
-      - "#282828"
+      - "#7aa2f7"
     cherryPickedCommitBgColor:
-      - "#8ec07c"
+      - "#bb9af7"
     markedBaseCommitFgColor:
-      - "#282828"
+      - "#7aa2f7"
     markedBaseCommitBgColor:
-      - "#fabd2f"
+      - "#e0af68"
     unstagedChangesColor:
-      - "#fb4934"
+      - "#db4b4b"
     defaultFgColor:
-      - "#ebdbb2"
+      - "#c0caf5"
+
+# # Gruvbox Dark (colors from the morhetz/gruvbox palette)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#fabd2f"
+#       - bold
+#     inactiveBorderColor:
+#       - "#665c54"
+#     searchingActiveBorderColor:
+#       - "#fe8019"
+#       - bold
+#     optionsTextColor:
+#       - "#83a598"
+#     selectedLineBgColor:
+#       - "#3c3836"
+#     cherryPickedCommitFgColor:
+#       - "#282828"
+#     cherryPickedCommitBgColor:
+#       - "#8ec07c"
+#     markedBaseCommitFgColor:
+#       - "#282828"
+#     markedBaseCommitBgColor:
+#       - "#fabd2f"
+#     unstagedChangesColor:
+#       - "#fb4934"
+#     defaultFgColor:
+#       - "#ebdbb2"
 
 # # Everforest Dark (colors from the sainnhe/everforest palette)
 # gui:
