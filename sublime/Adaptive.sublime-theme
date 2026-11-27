@@ -1,0 +1,35 @@
+// Overrides for Adaptive.sublime-theme (UI: Customize Theme), from the
+// Icons - Catppuccin README (predragnikolic/catppuccin-sublime-icons, MIT)
+{
+	"variables": {},
+	"rules": [
+		// Fix stretched file icons
+		{
+			"settings": {"file_icon_theme": "Catppuccin Mocha.sublime-file-icons"},
+			"class": "icon_file_type",
+			"content_margin": 8,
+			"layer0.opacity": 1.0,
+			"layer0.texture": "Icons - Catppuccin/icons/file_type_text.png",
+		},
+		// Catppuccin open/closed folder icons
+		{
+			"settings": {"file_icon_theme": "Catppuccin Mocha.sublime-file-icons"},
+			"class": "icon_folder",
+			"layer0.texture": "Icons - Catppuccin/icons/file_type_folder.png",
+			"content_margin": 8,
+			"layer0.opacity": 1.0,
+		},
+		{
+			"settings": {"file_icon_theme": "Catppuccin Mocha.sublime-file-icons"},
+			"class": "icon_folder",
+			"parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+			"layer0.texture": "Icons - Catppuccin/icons/file_type_folder_open.png",
+		},
+		// Hide folder arrows
+		{
+			"settings": {"file_icon_theme": "Catppuccin Mocha.sublime-file-icons"},
+			"class": "disclosure_button_control",
+			"content_margin": 0,
+		},
+	],
+}

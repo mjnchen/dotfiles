@@ -99,6 +99,8 @@ ln -sf "$DOTFILES/sublime/tokyonight_storm.tmTheme" "$SUBLIME_DIR/Packages/User/
 ln -sf "$DOTFILES/sublime/Everforest Dark.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Everforest Dark.sublime-color-scheme"
 # Gruvbox Dark scheme built from the morhetz/gruvbox palette (MIT)
 ln -sf "$DOTFILES/sublime/Gruvbox Dark.sublime-color-scheme" "$SUBLIME_DIR/Packages/User/Gruvbox Dark.sublime-color-scheme"
+# Adaptive theme overrides so the Catppuccin file icons (Icons - Catppuccin, MIT) render at the right size
+ln -sf "$DOTFILES/sublime/Adaptive.sublime-theme" "$SUBLIME_DIR/Packages/User/Adaptive.sublime-theme"
 # Package Control installs anything listed in installed_packages (e.g. Catppuccin) on next launch
 ln -sf "$DOTFILES/sublime/Package Control.sublime-settings" "$SUBLIME_DIR/Packages/User/Package Control.sublime-settings"
 if [[ ! -f "$SUBLIME_DIR/Installed Packages/Package Control.sublime-package" ]]; then
