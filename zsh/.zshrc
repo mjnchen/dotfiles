@@ -46,7 +46,7 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
 # bat has no Kanagawa theme; "ansi" uses the terminal's palette (Ghostty: Kanagawa)
 # export BAT_THEME="ansi"
 # Catppuccin Mocha (bat built-in)
-# export BAT_THEME="Catppuccin Mocha"
+export BAT_THEME="Catppuccin Mocha"
 # Dracula (bat built-in; delta also reads BAT_THEME)
 # export BAT_THEME="Dracula"
 # Gruvbox Dark (bat built-in; delta also reads BAT_THEME)
@@ -54,7 +54,7 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :200 {}'"
 # Rose Pine: bat has no Rose Pine theme; "ansi" uses Ghostty's palette
 # export BAT_THEME="ansi"
 # TokyoNight Storm: bat has no TokyoNight theme; "ansi" uses Ghostty's palette
-export BAT_THEME="ansi"
+# export BAT_THEME="ansi"
 # Everforest: bat has no Everforest theme; "ansi" uses Ghostty's palette
 # export BAT_THEME="ansi"
 # Dracula (dracula/fzf)
@@ -62,7 +62,7 @@ export BAT_THEME="ansi"
 # Gruvbox Dark (colors from the morhetz/gruvbox palette)
 # export FZF_DEFAULT_OPTS="--color=fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fe8019,info:#83a598,prompt:#b8bb26,pointer:#fb4934,marker:#fb4934,spinner:#fe8019,header:#928374,border:#504945,gutter:#282828"
 # Catppuccin Mocha
-# export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
+export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8,fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc,marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8,border:#6c7086"
 # Kanagawa Dragon
 # export FZF_DEFAULT_OPTS="--color=bg+:#282727,bg:#181616,spinner:#8ea4a2,hl:#c4746e,fg:#c5c9c5,header:#c4746e,info:#8992a7,pointer:#c8c093,marker:#8ea4a2,fg+:#c5c9c5,prompt:#8992a7,hl+:#e46876,border:#625e5a"
 # Kanagawa Wave
@@ -72,7 +72,7 @@ export BAT_THEME="ansi"
 # Rose Pine Moon (rose-pine/fzf)
 # export FZF_DEFAULT_OPTS="--color=fg:#908caa,bg:#232136,hl:#ea9a97,fg+:#e0def4,bg+:#393552,hl+:#ea9a97,border:#44415a,header:#3e8fb0,gutter:#232136,spinner:#f6c177,info:#9ccfd8,pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
 # TokyoNight Storm (colors from folke/tokyonight.nvim extras/fzf)
-export FZF_DEFAULT_OPTS="--color=bg+:#2e3c64,bg:#1f2335,border:#29a4bd,fg:#c0caf5,gutter:#1f2335,header:#ff9e64,hl+:#2ac3de,hl:#2ac3de,info:#545c7e,marker:#ff007c,pointer:#ff007c,prompt:#2ac3de,query:#c0caf5:regular,scrollbar:#29a4bd,separator:#ff9e64,spinner:#ff007c"
+# export FZF_DEFAULT_OPTS="--color=bg+:#2e3c64,bg:#1f2335,border:#29a4bd,fg:#c0caf5,gutter:#1f2335,header:#ff9e64,hl+:#2ac3de,hl:#2ac3de,info:#545c7e,marker:#ff007c,pointer:#ff007c,prompt:#2ac3de,query:#c0caf5:regular,scrollbar:#29a4bd,separator:#ff9e64,spinner:#ff007c"
 # Everforest Dark (colors from the sainnhe/everforest palette)
 # export FZF_DEFAULT_OPTS="--color=fg:#d3c6aa,bg:#232a2e,hl:#a7c080,fg+:#d3c6aa,bg+:#343f44,hl+:#a7c080,info:#7fbbb3,prompt:#e69875,pointer:#e67e80,marker:#a7c080,spinner:#83c092,header:#859289,border:#475258,gutter:#232a2e"
 

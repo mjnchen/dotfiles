@@ -1,8 +1,8 @@
 {
-    // "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Catppuccin Mocha",
     // "workbench.colorTheme": "Dracula Theme",
     // "workbench.colorTheme": "Gruvbox Dark Medium",
-    "workbench.colorTheme": "Tokyo Night Storm",
+    // "workbench.colorTheme": "Tokyo Night Storm",
     // "workbench.colorTheme": "Kanagawa Dragon",
     // "workbench.colorTheme": "Kanagawa Wave",
     // "workbench.colorTheme": "Rosé Pine",
@@ -10,11 +10,11 @@
     // "workbench.colorTheme": "Kanagawa Dragon",
     // "workbench.colorTheme": "Everforest Dark",
     "workbench.preferredHighContrastLightColorTheme": "Catppuccin Mocha",
-    "workbench.preferredHighContrastColorTheme": "Tokyo Night Storm",
+    "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
     "claudeCode.preferredLocation": "sidebar",
     "redhat.telemetry.enabled": true,
     "makefile.configureOnOpen": true,
     "go.toolsManagement.autoUpdate": true,
     "claudeCode.hideOnboarding": true,
-    "workbench.iconTheme": "vs-seti"
+    "workbench.iconTheme": "catppuccin-mocha"
 }

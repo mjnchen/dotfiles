@@ -54,14 +54,14 @@ font-family = MapleMono NF CN
 copy-on-select = clipboard
 window-save-state = always
 # theme = Catppuccin Macchiato
-# theme = Catppuccin Mocha
+theme = Catppuccin Mocha
 # theme = Dracula
 # theme = Gruvbox Dark
 # theme = Kanagawa Dragon
 # theme = Kanagawa Wave
 # theme = Rose Pine
 # theme = Rose Pine Moon
-theme = TokyoNight Storm
+# theme = TokyoNight Storm
 # theme = Everforest Dark Med
 
 shell-integration = zsh

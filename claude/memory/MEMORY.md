@@ -1,4 +1,5 @@
 # Memory Index
 
-- [Dotfiles project overview](project_dotfiles.md) — Shell (zsh+Starship), Ghostty, Homebrew layout, setup.sh, overrides; theme state (Tokyo Night Storm active; top 3 Catppuccin Mocha / Tokyo Night Storm / Kanagawa Dragon)
+- [Dotfiles project overview](project_dotfiles.md) — Shell (zsh+Starship), Ghostty, Homebrew layout, setup.sh, overrides; theme state (Catppuccin Mocha active since 2026-11-26; top 3 Catppuccin Mocha / Tokyo Night Storm / Kanagawa Dragon)
 - [Multipass / Cloudflare WARP DNS conflict](project_multipass_warp_conflict.md) — Multipass daemon holds port 53 on boot, breaking WARP DNS proxy (CF_DNS_PROXY_FAILURE); kept but disabled at boot since 2026-10-27
+- [Finish app-side theme changes](feedback_finish_app_side_theme.md) — mods repaint the Claude app only on an in-app session start; do/verify it, don't hand it back

@@ -87,12 +87,12 @@
     "huggingface-skills@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
-    "catppuccin-mocha@dotfiles": false,
+    "catppuccin-mocha@dotfiles": true,
     "dracula@dotfiles": false,
     "kanagawa-dragon@dotfiles": false,
     "everforest-dark@dotfiles": false,
     "gruvbox-dark@dotfiles": false,
-    "tokyo-night-storm@dotfiles": true
+    "tokyo-night-storm@dotfiles": false
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
