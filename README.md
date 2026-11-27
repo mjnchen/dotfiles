@@ -62,3 +62,21 @@ touch "/Applications/Visual Studio Code.app"
 sudo rm -rf /Library/Caches/com.apple.iconservices.store
 killall Dock
 ```
+
+### Browser theme: Catppuccin Mocha (manual)
+
+Browser themes and extensions come from the stores, so nothing is checked in here.
+
+- **Chrome / Brave**: install [Catppuccin Chrome Theme – Mocha](https://chromewebstore.google.com/detail/bkkmolkhemgaeaeggcmfbghljjjoofoh). In Brave, also set Settings → Appearance to Dark.
+- **Firefox**: install [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/), then open the **Mocha → Mauve** link from [catppuccin/firefox](https://github.com/catppuccin/firefox#usage) and apply it.
+- **Safari**: no themes.
+
+Web pages are themed with Stylus and [catppuccin/userstyles](https://github.com/catppuccin/userstyles):
+
+1. Install Stylus for [Chrome / Brave](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/).
+2. Download the all-styles export (keeps itself up to date after import, so don't check it in):
+   ```bash
+   curl -fsSL -o ~/Downloads/catppuccin-userstyles-import.json \
+     https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json
+   ```
+3. Stylus → Manage → Import (under Backup) → pick that file. Defaults: dark Mocha, light Latte, accent Mauve.
