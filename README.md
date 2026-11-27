@@ -80,3 +80,4 @@ Web pages are themed with Stylus and [catppuccin/userstyles](https://github.com/
      https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json
    ```
 3. Stylus → Manage → Import (under Backup) → pick that file. Defaults: dark Mocha, light Latte, accent Mauve.
+4. Gmail: set Gmail's own theme to **Dark** (⚙️ → Themes → View all); the Catppuccin style needs it as a base, otherwise rows show mixed light/dark. It's saved per Google account.
