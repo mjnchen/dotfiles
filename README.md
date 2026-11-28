@@ -63,12 +63,14 @@ sudo rm -rf /Library/Caches/com.apple.iconservices.store
 killall Dock
 ```
 
-### Browser theme: Catppuccin Mocha (manual)
+### Browser theme: Catppuccin Latte (manual)
+
+Browsers use the light Latte flavor (easier on the eyes for long reading); everything else stays on Mocha.
 
 Browser themes and extensions come from the stores, so nothing is checked in here.
 
-- **Chrome / Brave**: install [Catppuccin Chrome Theme – Mocha](https://chromewebstore.google.com/detail/bkkmolkhemgaeaeggcmfbghljjjoofoh). In Brave, also set Settings → Appearance to Dark.
-- **Firefox**: install [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/), then open the **Mocha → Mauve** link from [catppuccin/firefox](https://github.com/catppuccin/firefox#usage) and apply it.
+- **Chrome / Brave**: install [Catppuccin Chrome Theme – Latte](https://chromewebstore.google.com/detail/jhjnalhegpceacdhbplhnakmkdliaddd). Set Settings → Appearance → Mode to **Light** (Brave: Appearance → Light) so web pages pick the light styles too.
+- **Firefox**: install [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/), then open the **Latte → Mauve** link from [catppuccin/firefox](https://github.com/catppuccin/firefox#usage) and apply it. Set Settings → General → Website appearance to **Light**.
 - **Safari**: no themes.
 
 Web pages are themed with Stylus and [catppuccin/userstyles](https://github.com/catppuccin/userstyles):
@@ -79,5 +81,5 @@ Web pages are themed with Stylus and [catppuccin/userstyles](https://github.com/
    curl -fsSL -o ~/Downloads/catppuccin-userstyles-import.json \
      https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json
    ```
-3. Stylus → Manage → Import (under Backup) → pick that file. Defaults: dark Mocha, light Latte, accent Mauve.
-4. Gmail: set Gmail's own theme to **Dark** (⚙️ → Themes → View all); the Catppuccin style needs it as a base, otherwise rows show mixed light/dark. It's saved per Google account.
+3. Stylus → Manage → Import (under Backup) → pick that file. Defaults: dark Mocha, light Latte, accent Mauve; styles follow the browser's light/dark mode, so Light mode gives Latte.
+4. Gmail: Gmail's own theme must match the browser mode (⚙️ → Themes → View all): the **Default** light theme for Latte, **Dark** for Mocha; otherwise rows show mixed light/dark. It's saved per Google account.
