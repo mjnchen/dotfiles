@@ -63,23 +63,14 @@ sudo rm -rf /Library/Caches/com.apple.iconservices.store
 killall Dock
 ```
 
-### Browser theme: Catppuccin Latte (manual)
+### Browsers: Dark Reader (manual)
 
-Browsers use the light Latte flavor (easier on the eyes for long reading); everything else stays on Mocha.
+Browsers stay stock (no theme extensions); eye comfort comes from [Dark Reader](https://darkreader.org), which darkens every site, not just ones with their own dark mode. Extensions come from the stores, so nothing is checked in here.
 
-Browser themes and extensions come from the stores, so nothing is checked in here.
+1. Set each browser to follow macOS: Chrome → Settings → Appearance → Mode → **Device**; Brave → Appearance → Brave colors → **Same as macOS**; Firefox → Settings → General → Website appearance → **Automatic**. Keep macOS on Auto light/dark (System Settings → Appearance).
+2. Install Dark Reader for [Chrome / Brave](https://chromewebstore.google.com/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/darkreader/).
+3. In Dark Reader → Settings → Automation, choose **System color scheme**, so pages are dark only when macOS is.
+4. Tune for comfort: lower **Brightness** a little, add some **Sepia** if you like. Optional Catppuccin Mocha colors (Settings → Colors, dark scheme): background `#1e1e2e`, text `#cdd6f4`.
+5. If a site renders oddly, toggle Dark Reader off for that site from its toolbar popup.
+- **Safari**: no extension needed beyond following macOS.
 
-- **Chrome / Brave**: install [Catppuccin Chrome Theme – Latte](https://chromewebstore.google.com/detail/jhjnalhegpceacdhbplhnakmkdliaddd). Set Settings → Appearance → Mode to **Light** (Brave: Appearance → Light) so web pages pick the light styles too.
-- **Firefox**: install [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/), then open the **Latte → Mauve** link from [catppuccin/firefox](https://github.com/catppuccin/firefox#usage) and apply it. Set Settings → General → Website appearance to **Light**.
-- **Safari**: no themes.
-
-Web pages are themed with Stylus and [catppuccin/userstyles](https://github.com/catppuccin/userstyles):
-
-1. Install Stylus for [Chrome / Brave](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/).
-2. Download the all-styles export (keeps itself up to date after import, so don't check it in):
-   ```bash
-   curl -fsSL -o ~/Downloads/catppuccin-userstyles-import.json \
-     https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json
-   ```
-3. Stylus → Manage → Import (under Backup) → pick that file. Defaults: dark Mocha, light Latte, accent Mauve; styles follow the browser's light/dark mode, so Light mode gives Latte.
-4. Gmail: Gmail's own theme must match the browser mode (⚙️ → Themes → View all): the **Default** light theme for Latte, **Dark** for Mocha; otherwise rows show mixed light/dark. It's saved per Google account.
